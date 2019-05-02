@@ -95,7 +95,7 @@ img { width: 100%; }
 
 .head-ul { margin-bottom: 15px; padding: 0; }
 
-.head-li { font-family: "Open Sans"; font-weight: 400; font-size: 14px; display: inline-block; list-style: none; color: #FFFAF0; margin-right: 15px; }
+.head-li { font-family: "Open Sans" !important; font-weight: 600 !important; font-size: 14px !important; display: inline-block; list-style: none; margin-right: 15px; }
 
 .head-li a { color: #ffffff; }
 
