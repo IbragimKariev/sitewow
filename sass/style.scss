@@ -124,15 +124,15 @@
 
 
 @font-face {
-    font-family: 'fontello';
-    src: url('../fonts/fontello.eot?9836986');
-    src: url('../fonts/fontello.eot?9836986#iefix') format('embedded-opentype'),
-    url('../fonts/fontello.woff2?9836986') format('woff2'),
-    url('../fonts/fontello.woff?9836986') format('woff'),
-    url('../fonts/fontello.ttf?9836986') format('truetype'),
-    url('../fonts/fontello.svg?9836986#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?54436213');
+  src: url('../fonts/fontello.eot?54436213#iefix') format('embedded-opentype'),
+  url('../fonts/fontello.woff2?54436213') format('woff2'),
+  url('../fonts/fontello.woff?54436213') format('woff'),
+  url('../fonts/fontello.ttf?54436213') format('truetype'),
+  url('../fonts/fontello.svg?54436213#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -140,60 +140,61 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?9836986#fontello') format('svg');
+    src: url('../font/fontello.svg?54436213#fontello') format('svg');
   }
 }
 */
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
 
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-    /* opacity: .8; */
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
 
-    /* For safety - reset parent styles, that can break glyph codes*/
-    font-variant: normal;
-    text-transform: none;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
 
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
 
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
-    margin-left: .2em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
 
-    /* you can be more comfortable with increased icons size */
-    /* font-size: 120%; */
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
 
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-search:before { content: '\e800'; } /* '' */
-.icon-briefcase:before { content: '\e801'; } /* '' */
-.icon-location:before { content: '\e802'; } /* '' */
-.icon-user:before { content: '\e803'; } /* '' */
-.icon-basket:before { content: '\e804'; } /* '' */
+.icon-heart-empty:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e801'; } /* '' */
 .icon-mobile:before { content: '\e805'; } /* '' */
-.icon-right-circle:before { content: '\e807'; } /* '' */
-.icon-heart:before { content: '\e809'; } /* '' */
-.icon-right-dir:before { content: '\e80c'; } /* '' */
-.icon-users:before { content: '\f064'; } /* '' */
+.icon-location:before { content: '\f031'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-cart-plus:before { content: '\f217'; } /* '' */
+.icon-whatsapp:before { content: '\f232'; } /* '' */
+.icon-facebook:before { content: '\f30c'; } /* '' */
 img{
     width: 100%;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 .head {
@@ -262,6 +263,39 @@ img{
   -ms-transition: background .55s ease;
   -o-transition: background .55s ease;
   transition: background .55s ease;
+}
+.button-div{
+  .follow{
+    margin-left: 11%;
+    margin-top: -4px;
+    li:not(:last-child){
+      margin-right: 10px;
+    }
+    li{
+      display: inline-block;
+      list-style: none;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #FFFAF0;
+        font-size: 24px;
+      }
+      &:hover{
+        background: rgba(255,255,255, 0.6);
+        transition: all 0.6s;
+        a{
+          color: #2e4e8d;
+        }
+      }
+    }
+  }
 }
 .top-div{
   margin-top: 15px;
@@ -405,6 +439,7 @@ img{
     width: 100%;
     height: 100vh;
     position: relative;
+    margin-bottom: 10px;
 
    .slide-1{
     width: 100%;
@@ -456,3 +491,116 @@ img{
     }
   }
 
+  .carousel{
+    margin-top: 5px;
+    width: 100%;
+
+    li{
+      width: 180px;
+      display: inline-block;
+      list-style: none;
+
+      img{
+        width: 180px;
+        height: 240px;
+      }
+    }
+  }
+#main-content{
+
+  .clothes{
+    margin-top: 20px;
+    .carousel {
+      .owl-nav {
+
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 99;
+        span{
+          display: none;
+        }
+
+        .owl-next {
+          background-image: url(/images/right11.png);
+          background-size: cover !important;
+          position: absolute;
+          bottom: 46%;
+          right: 11px;
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+        }
+
+        .owl-prev {
+          background-image: url(/images/left11.png);
+          background-size: cover !important;
+          position: absolute;
+          bottom: 46%;
+          left: -14px;
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+        }
+      }}
+
+    .cloth-t{
+
+      text-decoration: none;
+      color: grey;
+      font-family: "Open Sans";
+      font-weight: 500;
+      font-size: 14px;
+      h3{
+        margin-right: 13px;
+        font-size: 16px;
+        display: inline-block;
+      }
+      span{
+        font-family: "Open Sans";
+        font-weight: 400;
+        margin-right: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  .img-wom{
+width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .elements{
+    position: relative;
+    h2{
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 22px;
+      font-weight: 600;
+    }
+    &:hover{
+      h2{
+        color: #F5F5DC;
+        transform: scale(1.01);
+      }
+      .wom-bag-sh{
+        filter: brightness(40%);
+        transition: all 0.6s;
+      }
+    }
+  }
+  .wom-bag-sh{
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}

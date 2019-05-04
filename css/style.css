@@ -45,7 +45,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholde
 
 @font-face { font-family: 'Open Sans'; src: url("../fonts/OpenSans-Light.eot"); src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.svg#OpenSans-Light") format("svg"); font-weight: 300; font-style: normal; }
 
-@font-face { font-family: 'fontello'; src: url("../fonts/fontello.eot?9836986"); src: url("../fonts/fontello.eot?9836986#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?9836986") format("woff2"), url("../fonts/fontello.woff?9836986") format("woff"), url("../fonts/fontello.ttf?9836986") format("truetype"), url("../fonts/fontello.svg?9836986#fontello") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'fontello'; src: url("../fonts/fontello.eot?54436213"); src: url("../fonts/fontello.eot?54436213#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?54436213") format("woff2"), url("../fonts/fontello.woff?54436213") format("woff"), url("../fonts/fontello.ttf?54436213") format("truetype"), url("../fonts/fontello.svg?54436213#fontello") format("svg"); font-weight: normal; font-style: normal; }
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -53,43 +53,42 @@ input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholde
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?9836986#fontello') format('svg');
+    src: url('../font/fontello.svg?54436213#fontello') format('svg');
   }
 }
 */
 [class^="icon-"]:before, [class*=" icon-"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; /* Animation center compensation - margins should be symmetric */ /* remove if not needed */ margin-left: .2em; /* you can be more comfortable with increased icons size */ /* font-size: 120%; */ /* Font smoothing. That was taken from TWBS */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; /* Uncomment for 3D effect */ /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-.icon-search:before { content: '\e800'; }
+.icon-heart-empty:before { content: '\e800'; }
 
 /* '' */
-.icon-briefcase:before { content: '\e801'; }
+.icon-phone:before { content: '\e801'; }
 
 /* '' */
-.icon-location:before { content: '\e802'; }
-
-/* '' */
-.icon-user:before { content: '\e803'; }
-
-/* '' */
-.icon-basket:before { content: '\e804'; }
-
-/* '' */
 .icon-mobile:before { content: '\e805'; }
 
 /* '' */
-.icon-right-circle:before { content: '\e807'; }
+.icon-location:before { content: '\f031'; }
 
-/* '' */
-.icon-heart:before { content: '\e809'; }
+/* '' */
+.icon-instagram:before { content: '\f16d'; }
 
-/* '' */
-.icon-right-dir:before { content: '\e80c'; }
+/* '' */
+.icon-vkontakte:before { content: '\f189'; }
 
-/* '' */
-.icon-users:before { content: '\f064'; }
+/* '' */
+.icon-cart-plus:before { content: '\f217'; }
 
-/* '' */
+/* '' */
+.icon-whatsapp:before { content: '\f232'; }
+
+/* '' */
+.icon-facebook:before { content: '\f30c'; }
+
+/* '' */
 img { width: 100%; }
+
+html { scroll-behavior: smooth; }
 
 .head { width: 100%; display: flex; background-image: linear-gradient(to right top, #1b4687, #3d5592, #56659e, #6d76a9, #8387b5); }
 
@@ -110,6 +109,18 @@ img { width: 100%; }
 .box { margin-left: 25px; }
 
 .container-1 input#search { width: 300px; height: 50px; background-color: rgba(255, 255, 255, 0.8); border: 1px; font-family: "Open Sans"; font-size: 16px; color: #FFFAF0; padding-left: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-transition: background .55s ease; -moz-transition: background .55s ease; -ms-transition: background .55s ease; -o-transition: background .55s ease; transition: background .55s ease; }
+
+.button-div .follow { margin-left: 11%; margin-top: -4px; }
+
+.button-div .follow li:not(:last-child) { margin-right: 10px; }
+
+.button-div .follow li { display: inline-block; list-style: none; width: 45px; height: 45px; border-radius: 50%; }
+
+.button-div .follow li a { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; text-decoration: none; color: #FFFAF0; font-size: 24px; }
+
+.button-div .follow li:hover { background: rgba(255, 255, 255, 0.6); transition: all 0.6s; }
+
+.button-div .follow li:hover a { color: #2e4e8d; }
 
 .top-div { margin-top: 15px; }
 
@@ -159,7 +170,7 @@ img { width: 100%; }
 
 .nav-li .push-menu .span-menu:after { transform: translateY(5px); }
 
-#sec-1 { width: 100%; height: 100vh; position: relative; }
+#sec-1 { width: 100%; height: 100vh; position: relative; margin-bottom: 10px; }
 
 #sec-1 .slide-1 { width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center; }
 
@@ -174,5 +185,39 @@ img { width: 100%; }
 #sec-1 .owl-nav .owl-prev:hover { background: url(../images/arrow-left.png); }
 
 #sec-1 .owl-nav span { display: none; }
+
+.carousel { margin-top: 5px; width: 100%; }
+
+.carousel li { width: 180px; display: inline-block; list-style: none; }
+
+.carousel li img { width: 180px; height: 240px; }
+
+#main-content .clothes { margin-top: 20px; }
+
+#main-content .clothes .carousel .owl-nav { bottom: 40px; left: 0; right: 0; margin: auto; z-index: 99; }
+
+#main-content .clothes .carousel .owl-nav span { display: none; }
+
+#main-content .clothes .carousel .owl-nav .owl-next { background-image: url(/images/right11.png); background-size: cover !important; position: absolute; bottom: 46%; right: 11px; height: 30px; width: 30px; border-radius: 50%; }
+
+#main-content .clothes .carousel .owl-nav .owl-prev { background-image: url(/images/left11.png); background-size: cover !important; position: absolute; bottom: 46%; left: -14px; height: 30px; width: 30px; border-radius: 50%; }
+
+#main-content .clothes .cloth-t { text-decoration: none; color: grey; font-family: "Open Sans"; font-weight: 500; font-size: 14px; }
+
+#main-content .clothes .cloth-t h3 { margin-right: 13px; font-size: 16px; display: inline-block; }
+
+#main-content .clothes .cloth-t span { font-family: "Open Sans"; font-weight: 400; margin-right: 10px; display: inline-block; }
+
+#main-content .img-wom { width: 100%; height: 200px; background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+#main-content .elements { position: relative; }
+
+#main-content .elements h2 { position: absolute; bottom: 20px; left: 10px; text-decoration: none; color: #ffffff; font-family: "Open Sans"; font-size: 22px; font-weight: 600; }
+
+#main-content .elements:hover h2 { color: #F5F5DC; transform: scale(1.01); }
+
+#main-content .elements:hover .wom-bag-sh { filter: brightness(40%); transition: all 0.6s; }
+
+#main-content .wom-bag-sh { height: 200px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; }
 
 /*# sourceMappingURL=maps/style.css.map */
