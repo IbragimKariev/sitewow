@@ -10,25 +10,19 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
 </head>
 <body>
 <header>
     <div class="head">
-        <div class="container head-cont">
+        <div class="container-fluid head-cont">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="top-div">
-                        <ul class="head-ul">
-                            <li class="head-li"><a href="#">Бишкек</a></li>
-                            <li class="head-li"><a href="#">Бесплатная доставка </a></li>
-                            <li class="head-li"><a href="#">Персональная скидка</a></li>
-                            <li class="head-li"><a href="#">Звонок с сайта</a></li>
-                            <li class="head-li"><a href="#">Частые вопросы</a></li>
 
-                        </ul>
-                    </div>
                     <div class="button-div">
-                        <div class="block-icon"><img src="images/11.png"></div>
+                        <a href="index.html" class="block-icon"><img src="images/11.png"></a>
                         <form>
 
                             <div class="box">
@@ -40,19 +34,13 @@
 
                         </form>
                         <ul class="follow">
-                            <li><a href="#"><i class="icon-instagram"></i></a></li>
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-vkontakte"></i></a></li>
+                            <li><a href="#" id="instagram"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#" id="facebook"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#" id="vk"><i class="icon-vkontakte"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="right-head">
-                        <ul class="head-ul">
-                            <li class="head-li"><a href="#">Скидки!</a></li>
-                            <li class="head-li"><a href="#">Акции!</a></li>
-                            <li class="head-li"><a href="#">Бонусы!</a></li>
-                        </ul>
                         <div class="loc-push">
                             <div class="icon-box"><a href="#"><i class="icon-heart-empty"></i>
                                 <p> Like</p></a></div>
@@ -61,7 +49,7 @@
                             <div class="icon-box"><a href="#"> <i class="icon-cart-plus"></i>
                                 <p>Покупки</p></a></div>
                         </div>
-                    </div>
+
                 </div>
 
             </div>
@@ -78,10 +66,10 @@
             <ul class="all_category">
                 <li class="all_category-items">
                     <ul>
-                        <li class="link-category"><a href="">lorem</a></li>
-                        <li class="link-category"><a href="">lorem</a></li>
-                        <li class="link-category"><a href="">lorem</a></li>
-                        <li class="link-category"><a href="">lorem</a></li>
+                        <li class="link-category"><a href="category.html" target="_blank">Женская одежда</a></li>
+                        <li class="link-category"><a href="category.html" target="_blank">Женская одежда больших размеров</a></li>
+                        <li class="link-category"><a href="category.html" target="_blank">Мужская одежда</a></li>
+                        <li class="link-category"><a href="category.html" target="_blank">Детская одежда</a></li>
 
                     </ul>
                 </li>
@@ -91,7 +79,7 @@
             <a href="#woman-cloth">Женская одежда</a>
             <ul class="category">
                 <li class="category-items">
-                   <h2 class="title-category">Женская одежда</h2>
+                    <h2 class="title-category">Женская одежда</h2>
                     <ul class="un-category">
                         <li class="un-category-items">
                             <h2 class="title-subcategory">категория</h2>
@@ -450,35 +438,73 @@
     </ul>
 </div>
 <main>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
     <section id="product-1">
 
 <div class="container-fluid">
 <div class="row">
-    <div class="col-lg-2">
-        <ul class="imagesl_1">
-            <li class="variants"><img src="images/c2c1247c849a6c6db4eb3bbfa09a2f2b.jpg" alt=""></li>
-            <li class="variants"><img src="images/6688046400_1_1_1.jpg" alt=""></li>
-            <li class="variants"><img src="images/c2c1247c849a6c6db4eb3bbfa09a2f2b.jpg" alt=""></li>
-        </ul>
-    </div>
-    <div class="col-nopad col-lg-4">
-        <div class="block-var">
-            <img class="var-image" src="images/c2c1247c849a6c6db4eb3bbfa09a2f2b.jpg" alt="">
-        </div>
-    </div>
-    <div class="col-nopad col-lg-6">
-        <div class="properties-tovar">
-          <h2>Название</h2>
-            <h3>Цена</h3>
-            <span class="color"><h2>Цвет:</h2> <h3>черный</h3></span>
-            <span class="dimensions">Размеры:</span>
-           <ul>
+ <div class="col-lg-5">
+     <div class="image-var">
+         <ul id="ul-id">
+             <li><img class="image"  src="images/c2c1247c849a6c6db4eb3bbfa09a2f2b.jpg"></li>
+             <li><img class="image"  src="images/7949459-1.jpg"></li>
+             <li><img class="image"  src="images/7949459-1.jpg"></li>
+         </ul>
+         <div id="big-box" class="big-bix">
+
+             <img id="max" src="images/c2c1247c849a6c6db4eb3bbfa09a2f2b.jpg">
+         </div>
+         <div id="zoomluyer" class="zoomluyer"><img id="zoomluresim" src="" alt=""></div>
+
+     </div>
+ </div>
+ <div class="col-lg-7">
+     <div class="div-description">
+     <div class="description">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor pariatur</p>
+     <h2 class="price">Цена:  <span>50$</span></h2>
+         <div class="buttons">
+
+             <button class="now-buy" type="button">Купить сейчас</button>
+             <button class="to-buy" type="button">В корзину</button>
+         </div>
+         <div class="quantity">
+             <h3>Количество:</h3>
+             <div role="button">-</div>
+             <div class="value">3</div>
+             <div role="button">+</div>
+         </div>
+
+         <h3 class="color">Цвет:<span>  Как на картинке</span></h3>
+         <div class="dimensions">
+             <h2 class="dimensions-h2">Размеры:</h2>
+             <ul>
+                 <li><a href="">S</a></li>
+                 <li><a href="">M</a></li>
+                 <li><a href="">L</a></li>
+                 <li><a href="">XL</a></li>
+                 <li><a href="">XXL</a></li>
+                 <li><a href="">XXXL</a></li>
+             </ul>
+         </div>
+         <div class="description-product">
+             <h2 class="description-product-h2">Описание:</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+
+     </div>
+     <div class="tips">
 
 
-           </ul>
-            <a href=""><button class="buy-button" type="button">Купить</button></a>
-        </div>
-    </div>
+     </div>
+     </div>
+ </div>
 </div>
 </div>
 </section>
@@ -663,6 +689,31 @@
         });
     });
 
+
+
+    $(document).ready(function () {
+        $('#zoomluyer').hide();
+        $('#max').mousemove(function (a) {
+
+            var x=a.pageX;
+            var y=a.pageY;
+            $('#buyutec').css("top",y*0.6);
+            $('#buyutec').css("left",x*0.6);
+            var image = $('#max').attr("src");
+            $('#zoomluresim').attr("src", image);
+            $('#zoomluresim').css("margin-top", -y*0.1);
+            $('#zoomluresim').css("margin-left", -x*0.1);
+        })
+
+
+        $('#max').mouseout(function () {
+            $('#zoomluyer').hide();
+        })
+        $('#max').mouseover(function () {
+            $('#zoomluyer').show();
+        })
+
+    })
 </script>
 </body>
 </html>
