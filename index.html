@@ -10,41 +10,57 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/poper.js"></script>
+    <script type="text/javascript " src="js/bootstrap.js"></script>
+
 </head>
 <body>
 <header>
     <div class="head">
-        <div class="container-fluid head-cont">
+        <div class="container-fluid head-cont content-container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-7">
 
                     <div class="button-div">
-                        <a href="index.html" class="block-icon"><img src="images/11.png"></a>
+                        <a href="index.html" class="block-icon"><img src="images/11a.png"></a>
                         <form>
 
                             <div class="box">
-                                <div class="container-1">
-                                    <span class="icon"><i class="fa fa-search"></i></span>
-                                    <input type="search" id="search" placeholder="Хочу купить..."/>
+                                <div class="search-bar">
+
+                                    <input type="text" class="input" placeholder="&nbsp;">
+                                    <span class="label">хочу купить</span>
+                                    <span class="highlight"></span>
+                                    <div class="search-btn">
+                                       <i class="icon-search search-icon"></i>
+                                    </div>
                                 </div>
                             </div>
 
                         </form>
-                        <ul class="follow">
-                            <li><a href="#" id="instagram"><i class="icon-instagram"></i></a></li>
-                            <li><a href="#" id="facebook"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#" id="vk"><i class="icon-vkontakte"></i></a></li>
-                        </ul>
+
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <div class="loc-push">
-                        <div class="icon-box"><a href="#"><i class="icon-heart-empty"></i>
-                            <p> Like</p></a></div>
-                        <div class="icon-box"><a href="#"> <i class="icon-location"></i>
-                            <p>Адреса</p></a></div>
-                        <div class="icon-box"><a href="#"> <i class="icon-cart-plus"></i>
-                            <p>Покупки</p></a></div>
+                        <div class="icon-box"><a href="#"><i class="icon icon-heart-empty"></i>
+                            <p> Избранное</p></a></div>
+                        <div class="icon-box"><a href="#"> <i class=" icon icon-user-o"></i>
+                            <p>Войти</p></a></div>
+                        <div class="icon-box"><a href="#"> <i class="icon icon-cart-plus"></i>
+                            <p>Моя корзина</p></a></div>
+                        <div class="drop">
+                            <button class="btn  dropdown-toggle drop-valute" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                $
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">RUB</a>
+                                <a class="dropdown-item" href="#">SOM</a>
+                                <a class="dropdown-item" href="#">$</a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -54,7 +70,7 @@
     </div>
 </header>
 <div class="nav">
-
+<div class="container-fluid content-container">
     <ul class="nav-ul">
         <li class="nav-li">
             <a href="#">
@@ -434,20 +450,23 @@
 
     </ul>
 </div>
+</div>
 
 <main>
     <section id="sec-1">
+        <div class="container-fluid content-container">
         <div class="owl-carousel first">
             <div class="slide-1" style="background-image: url(images/photo-1503342217505-b0a15ec3261c.jpg)"></div>
             <div class="slide-1" style="background-image: url(images/photo-1439158771502-46975f6e44e9.jpg)"></div>
             <div class="slide-1" style="background-image: url(images/EO3zTo.jpg)"></div>
         </div>
+        </div>
     </section>
     <section id="main-content">
-        <div class="container-fluid main-content">
+        <div class="container-fluid content-container">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="main-div">
+                 <div class="main-div">
                         <div class="clothes" id="woman-cloth">
                             <div class="img-wom" style="background-image: url(images/Screenshot_2.jpg)"></div>
                             <a href="#" class="cloth-t"><h3>Женская одежда</h3><span>новинки</span><span
@@ -856,64 +875,16 @@
 
                     </div>
                 </div>
-                <div class="mob-right col-lg-3">
-
-                    <div class="right-blocks ">
-                        <a class="link-right" href="#">
-                            <div class="block-right" style="background-image: url(images/Banners_01_Preview4.jpg)">
-                            </div>
-                            <h2>Lorem</h2>
-                        </a>
-                    </div>
-
-                    <div class="right-blocks ">
-                        <a class="link-right" href="#">
-                            <div class="block-right" style="background-image: url(images/banner.jpg)">
-                            </div>
-                            <h2>Lorem</h2>
-                        </a>
-                    </div>
-                    <div class="right-blocks ">
-                        <a class="link-right" href="#">
-                            <div class="block-right-long" style="background-image: url(images/5643399035_9_2_1.jpg)">
-                            </div>
-                            <h2>Lorem</h2>
-                        </a>
-                    </div>
-                    <div class="right-blocks ">
-                        <a class="link-right" href="#">
-                            <div class="block-right" style="background-image: url(images/banner.jpg)">
-                            </div>
-                            <h2>Lorem</h2>
-                        </a>
-                    </div>
-                    <div class="right-blocks ">
-                        <a class="link-right" href="#">
-                            <div class="block-right-long"
-                                 style="background-image: url(images/c2c1247c849a6c6db4eb3bbfa09a2f2b.jpg)">
-                            </div>
-                            <h2>Lorem</h2>
-                        </a>
-                    </div>
-                    <div class="right-blocks ">
-                        <a class="link-right" href="#">
-                            <div class="block-right" style="background-image: url(images/banner.jpg)">
-                            </div>
-                            <h2>Lorem</h2>
-                        </a>
-                    </div>
-
-
-                </div>
+                <div class="col-lg-3"></div>
             </div>
-        </div>
+            </div>
     </section>
 
 
 </main>
 <footer>
     <div class="footer">
-        <div class="container-fluid">
+        <div class="container-fluid content-container">
             <div class="row">
                 <div class="col-lg-2">
                     <div class="footer-box">
