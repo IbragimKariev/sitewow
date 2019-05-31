@@ -268,28 +268,17 @@
 }
 
 
-
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/fontello.eot?11132359');
-  src: url('../fonts/fontello.eot?11132359#iefix') format('embedded-opentype'),
-  url('../fonts/fontello.woff2?11132359') format('woff2'),
-  url('../fonts/fontello.woff?11132359') format('woff'),
-  url('../fonts/fontello.ttf?11132359') format('truetype'),
-  url('../fonts/fontello.svg?11132359#fontello') format('svg');
+  src: url('../fonts/fontello.eot?65307061');
+  src: url('../fonts/fontello.eot?65307061#iefix') format('embedded-opentype'),
+  url('../fonts/fontello.woff2?65307061') format('woff2'),
+  url('../fonts/fontello.woff?65307061') format('woff'),
+  url('../fonts/fontello.ttf?65307061') format('truetype'),
+  url('../fonts/fontello.svg?65307061#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?11132359#fontello') format('svg');
-  }
-}
-*/
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
@@ -326,18 +315,23 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-heart-empty:before { content: '\e800'; } /* '' */
-.icon-phone:before { content: '\e801'; } /* '' */
-.icon-search:before { content: '\e802'; } /* '' */
-.icon-mobile:before { content: '\e805'; } /* '' */
+.icon-star-empty:before { content: '\e800'; } /* '' */
+.icon-star:before { content: '\e801'; } /* '' */
+.icon-picture:before { content: '\e802'; } /* '' */
+.icon-chat:before { content: '\e803'; } /* '' */
+.icon-heart:before { content: '\e804'; } /* '' */
+.icon-heart-empty:before { content: '\e805'; } /* '' */
+.icon-phone:before { content: '\e806'; } /* '' */
+.icon-search:before { content: '\e807'; } /* '' */
+.icon-mobile:before { content: '\e808'; } /* '' */
+.icon-facebook:before { content: '\e809'; } /* '' */
+.icon-vk:before { content: '\e80a'; } /* '' */
+.icon-basket:before { content: '\e80b'; } /* '' */
+.icon-user:before { content: '\e80c'; } /* '' */
 .icon-location:before { content: '\f031'; } /* '' */
-.icon-comment-empty:before { content: '\f0e5'; } /* '' */
-.icon-instagram:before { content: '\f16d'; } /* '' */
-.icon-vkontakte:before { content: '\f189'; } /* '' */
-.icon-cart-plus:before { content: '\f217'; } /* '' */
 .icon-whatsapp:before { content: '\f232'; } /* '' */
-.icon-user-o:before { content: '\f2c0'; } /* '' */
-.icon-facebook:before { content: '\f30c'; } /* '' */
+.icon-instagram:before { content: '\f31e'; } /* '' */
+
 
 a {
   color: inherit;
@@ -1094,8 +1088,8 @@ main{
   }
 .image-var{
 display: flex;
-  position: sticky;
-  top: 70px;
+  //position: sticky;
+  //top: 70px;
   z-index: 999999;
   justify-content: space-around;
   .image-item{
@@ -1161,6 +1155,53 @@ display: flex;
 
 
 }
+  .reviews{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    background: #FFFFFF;
+    margin-top: 10px;
+    .reviews-title{
+      font-family: 'Roboto';
+      font-weight: 600;
+      font-size: 22px;
+      color: #000000;
+      margin-bottom: 15px;
+    }
+    .review-stars{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: flex;
+      align-items: center;
+      color: #f7d96d;
+      h3{
+        font-family: Roboto;
+        font-size: 16px;
+        color: #1B1C1C;
+      }
+    }
+    .review-sort{
+      display: flex;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      border-bottom:1px solid #040505;
+     li:not(:last-child){
+        margin-right: 10px;
+      }
+      .review-sorts{
+        height: 25px;
+        background: #eee;
+        border-radius: 11px;
+        padding: 4px;
+      }
+      .reviews_active{
+        background: #ff7676;
+        color: #ffffff;
+      }
+
+    }
+  }
   .div-description{
   .description{
    display: flex;
@@ -1262,16 +1303,41 @@ display: flex;
       ul{
         display: flex;
         li{
+          position: relative;
           margin-right: 15px;
-          a{
-            background: #b3bec6;
-            border: 1px solid #040505;
+          &:hover{
+            .more-description{
+              visibility: visible;
+            }
+          }
+         .dimension{
+
+            background: #eee;
+            border: 1px solid #85989c;
             border-radius: 5px;
             padding: 5px;
             &:hover{
-              background: #fff3cd;
+              background: #FF7676;
             }
           }
+          .more-description{
+            visibility: hidden;
+            display: flex;
+            min-width: 150px;
+            flex-direction: column;
+            background: #ffffff;
+            padding: 10px;
+            position: absolute;
+            bottom: 28px;
+            left: -24px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            font-family: Roboto;
+            font-size: 14px;
+          li{
+            display: flex;
+            margin-bottom: 1px;
+            margin-right: 0px;
+          }}
         }
       }
     }
@@ -1293,22 +1359,7 @@ display: flex;
       }
     }
   }
-  .reviews{
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background: #FFFFFF;
-    margin-top: 10px;
-    .reviews-title{
-      font-family: 'Roboto';
-      font-weight: 600;
-      font-size: 22px;
-      color: #000000;
-      margin-bottom: 35px;
-      padding-bottom: 10px;
-      border-bottom:1px solid #040505;
-    }
-  }
+
     #advice{
       margin-top: 10px;
 

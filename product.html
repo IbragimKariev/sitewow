@@ -10,8 +10,14 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/JavaScript" src="js/cloud.js"></script>
+
+    <script type="text/javascript" src="js/poper.js"></script>
+    <script type="text/javascript " src="js/bootstrap.js"></script>
+
 
 </head>
 <body>
@@ -45,14 +51,12 @@
                     <div class="loc-push">
                         <div class="icon-box"><a href="#"><i class="icon icon-heart-empty"></i>
                             <p> Избранное</p></a></div>
-                        <div class="icon-box"><a href="#"> <i class=" icon icon-user-o"></i>
+                        <div class="icon-box"><a href="#"> <i class=" icon icon-user"></i>
                             <p>Войти</p></a></div>
-                        <div class="icon-box"><a href="#"> <i class="icon icon-cart-plus"></i>
+                        <div class="icon-box"><a href="#"> <i class="icon icon-basket"></i>
                             <p>Моя корзина</p></a></div>
                         <div class="drop">
-                            <button class="btn  dropdown-toggle drop-valute" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                $
-                            </button>
+                            <button class="btn  dropdown-toggle drop-valute" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">$</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#">RUB</a>
                                 <a class="dropdown-item" href="#">SOM</a>
@@ -500,6 +504,26 @@
 
 
                     </div>
+
+                    <div class="reviews">
+                        <h2 class="reviews-title ">Отзывы:</h2>
+                        <ul class="review-stars">
+                            <li><i class="icon-star"></i></li>
+                            <li><i class="icon-star"></i></li>
+                            <li><i class="icon-star"></i></li>
+                            <li><i class="icon-star"></i></li>
+                            <li><i class="icon-star-empty"></i></li>
+                            <li><h3>4</h3></li>
+                        </ul>
+                        <ul class="review-sort">
+                            <li><a href="" class="review-sorts reviews_active">ALL</a></li>
+                            <li><a href="" class="review-sorts">ALL</a></li>
+                            <li><a href="" class="review-sorts">ALL</a></li>
+                            <li><a href="" class="review-sorts">ALL</a></li>
+                            <li><a href="" class="review-sorts">ALL</a></li>
+                        </ul>
+
+                    </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="div-description">
@@ -525,12 +549,50 @@
                             <div class="dimensions">
                                 <h2 class="dimensions-h2">Размеры:</h2>
                                 <ul>
-                                    <li><a href="">S</a></li>
-                                    <li><a href="">M</a></li>
-                                    <li><a href="">L</a></li>
-                                    <li><a href="">XL</a></li>
-                                    <li><a href="">XXL</a></li>
-                                    <li><a href="">XXXL</a></li>
+                                    <li><a class="dimension" href="">S</a>
+                                    <ul  class="more-description">
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                    </ul>
+                                    </li>
+                                    <li><a class="dimension" href="">M</a> <ul  class="more-description">
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                    </ul></li>
+                                    <li><a class="dimension" href="">L</a> <ul  class="more-description">
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                    </ul></li>
+                                    <li><a class="dimension" href="">XL</a> <ul  class="more-description">
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                    </ul></li>
+                                    <li><a class="dimension" href="">XXL</a> <ul  class="more-description">
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                    </ul></li>
+                                    <li><a class="dimension" href="">XXXL</a> <ul  class="more-description">
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                        <li><h2>Размер в см:</h2> <span>56см</span></li>
+                                    </ul></li>
                                 </ul>
                             </div>
                             <div class="description-product">
@@ -540,12 +602,7 @@
                             </div>
 
                         </div>
-                        <div class="reviews">
-                            <h2 class="reviews-title">Отзывы:</h2>
 
-
-
-                        </div>
                         <div id="advice">
                                 <h2 class="advice-title">Наши предложения</h2>
                                 <ul class="carousel-advice owl-carousel">
