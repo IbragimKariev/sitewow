@@ -826,7 +826,7 @@ main{
 
         .owl-next {
           background: inherit;
-          background-image: url(/images/rightt-chevron.png);
+          background-image: url(../images/rightt-chevron.png);
           background-size: cover !important;
           position: absolute;
           bottom: 52%;
@@ -838,7 +838,7 @@ main{
 
         .owl-prev{
           background: inherit;
-          background-image: url(/images/left-chevron.png);
+          background-image: url(../images/left-chevron.png);
           background-size: cover !important;
           position: absolute;
           bottom: 52%;
@@ -1088,56 +1088,82 @@ main{
   }
 .image-var{
 display: flex;
+  flex-direction: column;
+  align-items: center;
   //position: sticky;
   //top: 70px;
+
   z-index: 999999;
   justify-content: space-around;
+
+  .owl-product{
+    .owl-nav {
+
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 99;
+
+      span {
+        display: none;
+      }
+
+      .owl-next {
+        background: inherit;
+        background-image: url(../images/rightt-chevron.png);
+        background-size: cover !important;
+        position: absolute;
+        bottom: 39%;
+        right: -25px;
+        height: 40px;
+        width: 19px;
+
+      }
+
+      .owl-prev{
+        background: inherit;
+        background-image: url(../images/left-chevron.png);
+        background-size: cover !important;
+        position: absolute;
+        bottom: 39%;
+        left: -25px;
+        height: 40px;
+        width: 19px;
+
+
+      }
+    }
+  }
   .image-item{
     display: flex;
-    flex-direction: column;
-    .image-items{
-      width: 100px;
-      height: 150px;
-      margin-bottom: 15px;
 
+    .image-items{
+      width: 114px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      overflow: hidden;
     }
   }
   .cloud-zoom{
-    width: 320px;
-    height: 495px;
+    width: 420px;
+    height: 420px;
     display: flex;
-    .mousetrap{
-      width: 100%!important;
-      height: 100%!important;
-      display: none;
-    }
+    overflow: hidden;
   }
   .cloud-zoom-lens {
     border: 4px solid #888;
-    margin:-4px;
+
     background-color:#fff;
     cursor:move;
-
-  }
-
-
-  .cloud-zoom-title {
-    font-family:Arial, Helvetica, sans-serif;
-    position:absolute !important;
-    background-color:#000;
-    color:#fff;
-    padding:3px;
-    width:100%;
-    text-align:center;
-    font-weight:bold;
-    font-size:10px;
-    top:0px;
   }
 
 
   .cloud-zoom-big {
     border:4px solid #ccc;
     overflow:hidden;
+    width: 420px!important;
+    height: 420px!important;
   }
 
 
@@ -1375,79 +1401,142 @@ display: flex;
         padding-bottom: 10px;
         border-bottom:1px solid #040505;
       }
-      .carousel-advice{
-        margin-top: 25px;
-        padding-left: 5%;
-        padding-right: 5%;
-        .owl-next {
-          background: url(../images/arrow1.png);
-          background-size: cover !important;
-          position: absolute;
-          bottom: 46%;
-          right: -0.5%;
-          height: 40px;
-          width: 40px;
-
-          &:hover {
-            background: url(../images/arrowrightthover1.png);
-          }
-          span{
-            display: none;
-          }
-
-        }
-
-        .owl-prev {
-          background: url(../images/arrowlef1t.png);
-          background-size: cover !important;
-          position: absolute;
-          bottom: 46%;
-          left: -0.5%;
-          height: 40px;
-          width: 40px;
-
-          &:hover {
-            background: url(../images/arrowlefthover1.png);
-          }
-          span{
-            display: none;
-          }
-        }
+      .carousel-product-right {
+        margin-top: 10px;
         li{
+
           margin-bottom: 5px;
           margin-top: 5px;
-        }
-        li:hover{
-          box-shadow: 0 0 11px rgba(33,33,33,.4);
-          transition: all 0.4s;
 
+          &:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.4);
+            transition: all 0.4s;
+          }
         }
-        .properties{
-          display: flex;
-          flex-direction: column;
-          justify-content: left;
-          background: #ffffff;
-          padding-left: 3px;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          .linked{
-            text-decoration: none;
-            color: black;
-            font-family: 'Roboto';
-            font-weight: 500;
+        .owl-nav {
+
+          bottom: 40px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          z-index: 99;
+
+          span {
+            display: none;
+          }
+
+          .owl-next {
+            background: inherit;
+            background-image: url(../images/rightt-chevron.png);
+            background-size: cover !important;
+            position: absolute;
+            bottom: 52%;
+            right: -18px;
+            height: 40px;
+            width: 19px;
+
+          }
+
+          .owl-prev{
+            background: inherit;
+            background-image: url(../images/left-chevron.png);
+            background-size: cover !important;
+            position: absolute;
+            bottom: 52%;
+            left: -20px;
+            height: 40px;
+            width: 19px;
+
+
+          }
+        }
+        .item-product {
+          background: #f8f9fa;
+          border-radius: 5px;
+          width: 220px;
+          .product{
+            position: relative;
+            width: 220px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            background: #f8f8f8;
+            transition: all 0.4s;
+            overflow: hidden;
+
+            .product-image{
+              border-radius: 5px;
+              width: 220px;
+              height: 220px;
+              overflow: hidden;
+              img{
+                transition: all 0.6s;
+              }
+            }
+            .product-text{
+              background: #ffffff;
+              position: absolute;
+              bottom: -92px;
+              border-radius: 5px;
+              transition: all 0.4s;
+
+              h2{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding-left: 5px;
+                font-family: 'Roboto';
+                font-size: 18px;
+                font-weight: 400;
+                color: #040505;
+              }
+
+              p{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding-left: 5px;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-weight: 400;
+                color: #040505;
+              }
+              .more{
+                width: 100%;
+                height: 25px;
+                background: #ff7676;
+                display: flex;
+                color: #ffffff;
+                font-family: 'Roboto';
+                a{
+                  width: 100%;
+                  height: 100%;
+                }
+                &:hover{
+                  background: #ee60489c;
+                }
+              }
+            }
             &:hover{
-              text-decoration: none;
-              color: #A9A9A9;
-            }
-            h2{
-              font-size: 16px;
-            }
-            span{
-              font-size: 14px;
+              border-radius: 5px;
+              background: #ffffff;
+              transition: all 0.4s;
+              z-index: 3;
+              .product-text{
+                bottom: 0;
+                z-index: 1;
+                border-radius:5px;
+                transition: all 0.6s;
+                overflow: hidden;
+              }
+              .product-image{
+                img{
+                  transition: all 0.6s;
+                  transform: scale(1.04);
+                }
+              }
             }
           }
         }
-
       }
     }
     #similar{
@@ -1464,79 +1553,142 @@ display: flex;
         padding-bottom: 10px;
         border-bottom:1px solid #040505;
       }
-      .carousel-advice{
-        margin-top: 25px;
-        padding-left: 5%;
-        padding-right: 5%;
-        .owl-next {
-          background: url(../images/arrow1.png);
-          background-size: cover !important;
-          position: absolute;
-          bottom: 46%;
-          right: -0.5%;
-          height: 40px;
-          width: 40px;
-
-          &:hover {
-            background: url(../images/arrowrightthover1.png);
-          }
-          span{
-            display: none;
-          }
-
-        }
-
-        .owl-prev {
-          background: url(../images/arrowlef1t.png);
-          background-size: cover !important;
-          position: absolute;
-          bottom: 46%;
-          left: -0.5%;
-          height: 40px;
-          width: 40px;
-
-          &:hover {
-            background: url(../images/arrowlefthover1.png);
-          }
-          span{
-            display: none;
-          }
-        }
+      .carousel-product-right {
+        margin-top: 10px;
         li{
+
           margin-bottom: 5px;
           margin-top: 5px;
-        }
-        li:hover{
-          box-shadow: 0 0 11px rgba(33,33,33,.4);
-          transition: all 0.4s;
 
+          &:hover{
+            box-shadow: 0 0 11px rgba(33,33,33,.4);
+            transition: all 0.4s;
+          }
         }
-        .properties{
-          display: flex;
-          flex-direction: column;
-          justify-content: left;
-          background: #ffffff;
-          padding-left: 3px;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          .linked{
-            text-decoration: none;
-            color: black;
-            font-family: 'Roboto';
-            font-weight: 500;
+        .owl-nav {
+
+          bottom: 40px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          z-index: 99;
+
+          span {
+            display: none;
+          }
+
+          .owl-next {
+            background: inherit;
+            background-image: url(../images/rightt-chevron.png);
+            background-size: cover !important;
+            position: absolute;
+            bottom: 52%;
+            right: -18px;
+            height: 40px;
+            width: 19px;
+
+          }
+
+          .owl-prev{
+            background: inherit;
+            background-image: url(../images/left-chevron.png);
+            background-size: cover !important;
+            position: absolute;
+            bottom: 52%;
+            left: -20px;
+            height: 40px;
+            width: 19px;
+
+
+          }
+        }
+        .item-product {
+          background: #f8f9fa;
+          border-radius: 5px;
+          width: 220px;
+          .product{
+            position: relative;
+            width: 220px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            background: #f8f8f8;
+            transition: all 0.4s;
+            overflow: hidden;
+
+            .product-image{
+              border-radius: 5px;
+              width: 220px;
+              height: 220px;
+              overflow: hidden;
+              img{
+                transition: all 0.6s;
+              }
+            }
+            .product-text{
+              background: #ffffff;
+              position: absolute;
+              bottom: -92px;
+              border-radius: 5px;
+              transition: all 0.4s;
+
+              h2{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding-left: 5px;
+                font-family: 'Roboto';
+                font-size: 18px;
+                font-weight: 400;
+                color: #040505;
+              }
+
+              p{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding-left: 5px;
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-weight: 400;
+                color: #040505;
+              }
+              .more{
+                width: 100%;
+                height: 25px;
+                background: #ff7676;
+                display: flex;
+                color: #ffffff;
+                font-family: 'Roboto';
+                a{
+                  width: 100%;
+                  height: 100%;
+                }
+                &:hover{
+                  background: #ee60489c;
+                }
+              }
+            }
             &:hover{
-              text-decoration: none;
-              color: #A9A9A9;
-            }
-            h2{
-              font-size: 16px;
-            }
-            span{
-              font-size: 14px;
+              border-radius: 5px;
+              background: #ffffff;
+              transition: all 0.4s;
+              z-index: 3;
+              .product-text{
+                bottom: 0;
+                z-index: 1;
+                border-radius:5px;
+                transition: all 0.6s;
+                overflow: hidden;
+              }
+              .product-image{
+                img{
+                  transition: all 0.6s;
+                  transform: scale(1.04);
+                }
+              }
             }
           }
         }
-
       }
     }
 
@@ -1736,78 +1888,142 @@ overflow: hidden;
     padding-bottom: 10px;
     border-bottom:1px solid #040505;
   }
-  .carousel-advice{
-    margin-top: 25px;
-    padding-left: 5%;
-    padding-right: 5%;
-    .owl-next {
-      background: url(../images/arrow1.png);
-      background-size: cover !important;
-      position: absolute;
-      bottom: 46%;
-      right: 1.5%;
-      height: 40px;
-      width: 40px;
-
-      &:hover {
-        background: url(../images/arrowrightthover1.png);
-      }
-      span{
-        display: none;
-      }
-
-    }
-
-    .owl-prev {
-      background: url(../images/arrowlef1t.png);
-      background-size: cover !important;
-      position: absolute;
-      bottom: 46%;
-      left: 1.5%;
-      height: 40px;
-      width: 40px;
-
-      &:hover {
-        background: url(../images/arrowlefthover1.png);
-      }
-      span{
-        display: none;
-      }
-    }
+  .carousel-product {
+    margin-top: 10px;
     li{
+
       margin-bottom: 5px;
       margin-top: 5px;
+
+      &:hover{
+        box-shadow: 0 0 11px rgba(33,33,33,.4);
+        transition: all 0.4s;
+      }
     }
-    li:hover{
-      box-shadow: 0 0 11px rgba(33,33,33,.4);
-      transition: all 0.4s;
+    .owl-nav {
+
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 99;
+
+      span {
+        display: none;
+      }
+
+      .owl-next {
+        background: inherit;
+        background-image: url(../images/rightt-chevron.png);
+        background-size: cover !important;
+        position: absolute;
+        bottom: 52%;
+        right: -18px;
+        height: 40px;
+        width: 19px;
+
+      }
+
+      .owl-prev{
+        background: inherit;
+        background-image: url(../images/left-chevron.png);
+        background-size: cover !important;
+        position: absolute;
+        bottom: 52%;
+        left: -20px;
+        height: 40px;
+        width: 19px;
+
+
+      }
     }
-    .properties{
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      background: #ffffff;
-      padding-left: 3px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      .linked{
-        text-decoration: none;
-        color: black;
-        font-family: 'Roboto';
-        font-weight: 500;
+    .item-product {
+      background: #f8f9fa;
+      border-radius: 5px;
+      width: 220px;
+      .product{
+        position: relative;
+        width: 220px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        background: #f8f8f8;
+        transition: all 0.4s;
+        overflow: hidden;
+
+        .product-image{
+          border-radius: 5px;
+          width: 220px;
+          height: 220px;
+          overflow: hidden;
+          img{
+            transition: all 0.6s;
+          }
+        }
+        .product-text{
+          background: #ffffff;
+          position: absolute;
+          bottom: -92px;
+          border-radius: 5px;
+          transition: all 0.4s;
+
+          h2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 5px;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 400;
+            color: #040505;
+          }
+
+          p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 5px;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-weight: 400;
+            color: #040505;
+          }
+          .more{
+            width: 100%;
+            height: 25px;
+            background: #ff7676;
+            display: flex;
+            color: #ffffff;
+            font-family: 'Roboto';
+            a{
+              width: 100%;
+              height: 100%;
+            }
+            &:hover{
+              background: #ee60489c;
+            }
+          }
+        }
         &:hover{
-          text-decoration: none;
-          color: #A9A9A9;
-        }
-        h2{
-          font-size: 16px;
-        }
-        span{
-          font-size: 14px;
+          border-radius: 5px;
+          background: #ffffff;
+          transition: all 0.4s;
+          z-index: 3;
+          .product-text{
+            bottom: 0;
+            z-index: 1;
+            border-radius:5px;
+            transition: all 0.6s;
+            overflow: hidden;
+          }
+          .product-image{
+            img{
+              transition: all 0.6s;
+              transform: scale(1.04);
+            }
+          }
         }
       }
     }
-
   }
 }
 footer{
