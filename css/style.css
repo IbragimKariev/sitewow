@@ -253,8 +253,6 @@ img { width: 100%; }
 
 .carousel li { margin-bottom: 5px; margin-top: 5px; display: inline-block; list-style: none; background: #f8f9fa; }
 
-main { padding-bottom: 25px; }
-
 #main-content { background: #f8f9fa; }
 
 #main-content .content-container { max-width: 1292px; }
@@ -628,6 +626,82 @@ main { padding-bottom: 25px; }
 #advice .carousel-product .item-product .product:hover .product-text { bottom: 0; z-index: 1; border-radius: 5px; transition: all 0.6s; overflow: hidden; }
 
 #advice .carousel-product .item-product .product:hover .product-image img { transition: all 0.6s; transform: scale(1.04); }
+
+#bascet { background: #e9ecef; padding-bottom: 20px; }
+
+#bascet .bascet-name { width: 100%; font-family: Roboto; font-size: 30px; font-weight: 600; color: #040505; padding: 10px; margin-bottom: 25px; }
+
+#bascet .purchased { width: 100%; display: flex; flex-direction: column; }
+
+#bascet .purchased .all-purchased { display: flex; align-items: center; padding: 15px 15px 15px 5px; background: #ffffff; justify-content: space-between; }
+
+#bascet .purchased .all-purchased .delete { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #ff7676; }
+
+#bascet .purchased .all-purchased .delete:hover { color: #ff5749; }
+
+#bascet .purchased .all-purchased .forms { display: flex; }
+
+#bascet .purchased .all-purchased h3 { font-family: Roboto; font-size: 18px; font-weight: 500; color: #040505; }
+
+#bascet .purchased .all-purchased .form-check { -webkit-appearance: checkbox; width: 18px; height: 18px; margin-right: 10px; }
+
+#bascet .purchased .instance { display: flex; margin-top: 2px; padding: 15px 0 15px 5px; background: #ffffff; flex-direction: column; }
+
+#bascet .purchased .instance .form { display: flex; align-items: center; width: 100%; }
+
+#bascet .purchased .instance .form-check { -webkit-appearance: checkbox; width: 18px; height: 18px; margin-right: 10px; background: #ff7676 !important; }
+
+#bascet .purchased .instance h3 { font-family: Roboto; font-size: 16px; font-weight: 500; color: #040505; margin-top: 6px; }
+
+#bascet .purchased .instance .inst-image-block { display: flex; margin-top: 15px; }
+
+#bascet .purchased .instance .inst-image-box { width: 160px; height: 160px; overflow: hidden; }
+
+#bascet .purchased .instance .inst-ul { display: flex; flex-direction: column; margin-left: 16px; }
+
+#bascet .purchased .instance .inst-ul li { display: flex; }
+
+#bascet .purchased .instance .inst-ul li:not(:first-child) { margin-top: 10px; }
+
+#bascet .purchased .instance .inst-ul h2 { font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #6c757d; }
+
+#bascet .purchased .instance .inst-ul span { font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #1B1C1C; }
+
+#bascet .purchased .instance .inst-ul .add-button { width: 20px; height: 20px; border: 1px #6c757d; background: inherit; }
+
+#bascet .purchased .instance .inst-ul .add-button:hover { color: #ff7676; cursor: pointer; }
+
+#bascet .purchased .instance .inst-text-block { display: flex; justify-content: flex-end; }
+
+#bascet .purchased .instance .inst-ul-2 { margin-top: 15px; display: flex; flex-direction: column; }
+
+#bascet .purchased .instance .inst-ul-2 li { display: flex; justify-content: space-between; }
+
+#bascet .purchased .instance .inst-ul-2 li:not(:first-child) { margin-top: 10px; }
+
+#bascet .purchased .instance .inst-ul-2 h2 { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #000000; }
+
+#bascet .purchased .instance .inst-ul-2 span { font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #6c757d; }
+
+#bascet .sticky-sum { position: sticky; top: 42px; }
+
+#bascet .sum { display: flex; align-items: center; padding: 15px 15px 15px 5px; background: #ffffff; }
+
+#bascet .sum h2 { font-family: Roboto; font-size: 18px; font-weight: 500; color: #040505; }
+
+#bascet .all-sum { margin-top: 1px; background: #ffffff; display: flex; padding: 10px 10px 5px 10px; flex-direction: column; align-items: center; }
+
+#bascet .all-sum .sum-ul { width: 100%; margin-top: 15px; display: flex; flex-direction: column; }
+
+#bascet .all-sum .sum-ul li { display: flex; justify-content: space-between; }
+
+#bascet .all-sum .sum-ul li:not(:first-child) { margin-top: 10px; }
+
+#bascet .all-sum .sum-ul h2 { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #000000; }
+
+#bascet .all-sum .sum-ul span { font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #6c757d; }
+
+#bascet .all-sum .push-item { margin-top: 15px; width: 80%; height: 30px; font-family: Roboto; font-size: 18px; font-weight: 500; color: #ffffff; background: #ff7676; border-radius: 5px; display: flex; justify-content: center; align-items: center; }
 
 footer .footer { width: 100%; border-top: 1px solid #2b4d8c; padding-top: 15px; padding-bottom: 55px; background: #f0f0f0; }
 

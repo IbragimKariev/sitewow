@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gulp Sass/Scss Compiler </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/poper.js"></script>
+    <script type="text/javascript " src="js/bootstrap.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="head">
+        <div class="container-fluid head-cont content-container">
+            <div class="row">
+                <div class="col-lg-7">
+
+                    <div class="button-div">
+                        <a href="index.html" class="block-icon"><img src="images/11a.png"></a>
+                        <form>
+
+                            <div class="box">
+                                <div class="search-bar">
+
+                                    <input type="text" class="input" placeholder="&nbsp;">
+                                    <span class="label">хочу купить</span>
+                                    <span class="highlight"></span>
+                                    <div class="search-btn">
+                                        <i class="icon-search search-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="loc-push">
+                        <div class="icon-box"><a href="#"><i class="icon icon-heart-empty"></i>
+                            <p> Избранное</p></a></div>
+                        <div class="icon-box"><a href="#"> <i class=" icon icon-user"></i>
+                            <p>Войти</p></a></div>
+                        <div class="icon-box"><a href="#"> <i class="icon icon-basket"></i>
+                            <p>Моя корзина</p></a></div>
+                        <div class="drop">
+                            <button class="btn  dropdown-toggle drop-valute" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                $
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">RUB</a>
+                                <a class="dropdown-item" href="#">SOM</a>
+                                <a class="dropdown-item" href="#">$</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<div class="nav">
+    <div class="container-fluid content-container nav-container">
+        <ul class="nav-ul">
+            <li class="nav-li">
+                <a href="#">
+                    <div class="push-menu"><span class="span-menu"></span></div>
+                    Все категории</a>
+                <ul class="all_category">
+                    <li class="all_category-items">
+                        <ul>
+                            <li class="link-category"><a href="category.html" target="_blank">Женская одежда</a></li>
+                            <li class="link-category"><a href="category.html" target="_blank">Женская одежда больших
+                                размеров</a></li>
+                            <li class="link-category"><a href="category.html" target="_blank">Мужская одежда</a></li>
+                            <li class="link-category"><a href="category.html" target="_blank">Детская одежда</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a href="#woman-cloth">Женская одежда</a>
+                <ul class="category">
+                    <li class="category-items">
+                        <h2 class="title-category">Женская одежда</h2>
+                        <ul class="un-category">
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a href="#man-cloth">Мужская одежда</a>
+                <ul class="category">
+                    <li class="category-items">
+                        <h2 class="title-category">Женская одежда</h2>
+                        <ul class="un-category">
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-li"><a href="#teen-cloth">Детская одежда</a>
+                <ul class="category">
+                    <li class="category-items">
+                        <h2 class="title-category">Женская одежда</h2>
+                        <ul class="un-category">
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<main>
+    <section id="bascet">
+        <div class="container-fluid content-container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+            <div class="bascet-name">
+
+                <h2>Моя корзина</h2>
+            </div>
+            <div class="bascet-box">
+                <div class="row">
+
+                    <div class="col-lg-8">
+                        <div class="purchased">
+                        <div class="all-purchased">
+                            <div class="forms">
+                                <input class="form-check" type="checkbox" value="" id="default" checked>
+                                <label class="form-check-label" for="default">
+                                    <h3>Выбрать все товары</h3>
+                                </label></div>
+                            <a href="#" class="delete">Удалить выбранные <span>(2)</span></a>
+
+                        </div>
+                            <div class="instance">
+                                <div class="form">
+                                <input class="form-check" type="checkbox" value="" id="default1" checked>
+                                <label class="form-check-label" for="default1">
+                                    <h3>Default checkbox</h3>
+                                </label>
+                            </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-8 inst-image-block">
+                                            <div class="inst-image-box">
+                                                <img src="images/product.jpg" alt="">
+                                            </div>
+                                            <ul class="inst-ul">
+                                                <li><h2>Цвет:</h2><span>серый</span></li>
+                                                <li><h2>Размер:</h2><span>L</span></li>
+                                                <li><h2>Доставка:</h2><span>есть</span></li>
+                                                <li><h2>Количество:</h2><button type="button" class="add-button">-</button><span>2</span><button type="button" class="add-button">+</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 inst-text-block">
+                                            <ul class="inst-ul-2">
+                                                <li><h2>Цвет:</h2><span>серый</span></li>
+                                                <li><h2>Размер:</h2><span>L</span></li>
+                                                <li><h2>Доставка:</h2><span>есть</span></li>
+                                                <li><h2>Количество:</h2><span>2</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instance">
+                                <div class="form">
+                                <input class="form-check" type="checkbox" value="" id="default2" checked>
+                                <label class="form-check-label" for="default2">
+                                    <h3>Default checkbox</h3>
+                                </label>
+                            </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-8 inst-image-block">
+                                            <div class="inst-image-box">
+                                                <img src="images/product.jpg" alt="">
+                                            </div>
+                                            <ul class="inst-ul">
+                                                <li><h2>Цвет:</h2><span>серый</span></li>
+                                                <li><h2>Размер:</h2><span>L</span></li>
+                                                <li><h2>Доставка:</h2><span>есть</span></li>
+                                                <li><h2>Количество:</h2><button type="button" class="add-button">-</button><span>2</span><button type="button" class="add-button">+</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 inst-text-block">
+                                            <ul class="inst-ul-2">
+                                                <li><h2>Цвет:</h2><span>серый</span></li>
+                                                <li><h2>Размер:</h2><span>L</span></li>
+                                                <li><h2>Доставка:</h2><span>есть</span></li>
+                                                <li><h2>Количество:</h2><span>2</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instance">
+                                <div class="form">
+                                <input class="form-check" type="checkbox" value="" id="default3" checked>
+                                <label class="form-check-label" for="default3">
+                                    <h3>Default checkbox</h3>
+                                </label>
+                            </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-8 inst-image-block">
+                                            <div class="inst-image-box">
+                                                <img src="images/product.jpg" alt="">
+                                            </div>
+                                            <ul class="inst-ul">
+                                                <li><h2>Цвет:</h2><span>серый</span></li>
+                                                <li><h2>Размер:</h2><span>L</span></li>
+                                                <li><h2>Доставка:</h2><span>есть</span></li>
+                                                <li><h2>Количество:</h2><button type="button" class="add-button">-</button><span>2</span><button type="button" class="add-button">+</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 inst-text-block">
+                                            <ul class="inst-ul-2">
+                                                <li><h2>Цвет:</h2><span>серый</span></li>
+                                                <li><h2>Размер:</h2><span>L</span></li>
+                                                <li><h2>Доставка:</h2><span>есть</span></li>
+                                                <li><h2>Количество:</h2><span>2</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="sticky-sum">
+                        <div class="sum">
+                            <h2>сумма заказа</h2>
+                        </div>
+                        <div class="all-sum">
+                            <ul class="sum-ul">
+                                <li><h2>Цена:</h2><span>123</span></li>
+                                <li><h2>Скидка:</h2><span>5%</span></li>
+                                <li><h2>Доставка:</h2><span>есть</span></li>
+                                <li><h2>Итого:</h2><span>276</span></li>
+                            </ul>
+                            <a href="#" class="push-item">Оформить заказ</a>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<footer>
+    <div class="footer">
+        <div class="container-fluid content-container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <a class="icon-link" href="">
+                            <img class="logo-img" src="images/11a.png" alt="">
+                        </a>
+                        <a href=""><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. </p></a>
+                        <a href=""><h2>Пользовательское соглашение</h2></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <h3 class="headline">Меню</h3>
+                        <ul>
+                            <li><a href="">Обратная сввязь</a></li>
+                            <li><a href="">Мои заказы</a></li>
+                            <li><a href="">Настройки</a></li>
+                            <li><a href="">О сервисе</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <h3 class="headline">Как купить</h3>
+                        <ul>
+                            <li><a href="">Оплата и доставка</a></li>
+                            <li><a href="">Возврат</a></li>
+                            <li><a href="">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <h3 class="headline">Партнерам</h3>
+                        <ul>
+                            <li><a href="">Как начать сотрудничество</a></li>
+                            <li><a href="">Справка для партнеров</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 no-pad">
+                    <div class="footer-box">
+                        <h3 class="headline">WOW в социальных сетях</h3>
+                        <ul>
+                            <li class="footer-icon"><a href=""><i class="icon-facebook"></i></a></li>
+                            <li class="footer-icon"><a href=""><i class="icon-instagram"></i></a></li>
+                            <li class="footer-icon"><a href=""><i class="icon-whatsapp"></i></a></li>
+                            <li class="footer-icon"><a href=""><i class="icon-vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <h3 class="headline">Контакты</h3>
+                        <ul>
+                            <li><a href="tel:+996 777 00 44 88"><i class="icon-phone"></i> +996 777 00 44 88</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="js/owl.carousel.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".first").owlCarousel({
+            items: 1,
+
+            nav: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            animateOut: 'fadeOut'
+        });
+    });
+
+    $(document).ready(function () {
+        $(".carousel").owlCarousel({
+            items: 4,
+            loop: true,
+            nav: true,
+            margin: 20
+
+        });
+    });
+
+
+</script>
+</body>
+</html>
