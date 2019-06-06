@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gulp Sass/Scss Compiler </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/poper.js"></script>
+    <script type="text/javascript " src="js/bootstrap.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="head">
+        <div class="container-fluid head-cont content-container">
+            <div class="row">
+                <div class="col-lg-7">
+
+                    <div class="button-div">
+                        <a href="index.html" class="block-icon"><img src="images/11a.png"></a>
+                        <form>
+
+                            <div class="box">
+                                <div class="search-bar">
+
+                                    <input type="text" class="input" placeholder="&nbsp;">
+                                    <span class="label">хочу купить</span>
+                                    <span class="highlight"></span>
+                                    <div class="search-btn">
+                                        <i class="icon-search search-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="loc-push">
+                        <div class="icon-box"><a href="#"><i class="icon icon-heart-empty"></i>
+                            <p> Избранное</p></a></div>
+                        <div class="icon-box"><a href="#"> <i class=" icon icon-user"></i>
+                            <p>Войти</p></a></div>
+                        <div class="icon-box"><a href="#"> <i class="icon icon-basket"></i>
+                            <p>Моя корзина</p></a></div>
+                        <div class="drop">
+                            <button class="btn  dropdown-toggle drop-valute" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                $
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">RUB</a>
+                                <a class="dropdown-item" href="#">SOM</a>
+                                <a class="dropdown-item" href="#">$</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<div class="nav">
+    <div class="container-fluid content-container nav-container">
+        <ul class="nav-ul">
+            <li class="nav-li">
+                <a href="#">
+                    <div class="push-menu"><span class="span-menu"></span></div>
+                    Все категории</a>
+                <ul class="all_category">
+                    <li class="all_category-items">
+                        <ul>
+                            <li class="link-category"><a href="category.html" target="_blank">Женская одежда</a></li>
+                            <li class="link-category"><a href="category.html" target="_blank">Женская одежда больших
+                                размеров</a></li>
+                            <li class="link-category"><a href="category.html" target="_blank">Мужская одежда</a></li>
+                            <li class="link-category"><a href="category.html" target="_blank">Детская одежда</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a href="#woman-cloth">Женская одежда</a>
+                <ul class="category">
+                    <li class="category-items">
+                        <h2 class="title-category">Женская одежда</h2>
+                        <ul class="un-category">
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a href="#man-cloth">Мужская одежда</a>
+                <ul class="category">
+                    <li class="category-items">
+                        <h2 class="title-category">Женская одежда</h2>
+                        <ul class="un-category">
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-li"><a href="#teen-cloth">Детская одежда</a>
+                <ul class="category">
+                    <li class="category-items">
+                        <h2 class="title-category">Женская одежда</h2>
+                        <ul class="un-category">
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                            <li class="un-category-items">
+                                <h2 class="title-subcategory">категория</h2>
+                                <ul>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                    <li class="subcategory"><a href="">товар</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<main>
+    <section id="questions">
+        <div class="container-fluid content-container">
+
+            <div class="tab_div">
+                <div class="tabs_menu">
+                    <ul class="tabs">
+                        <li id="tab1"> Tab 1 </li>
+                        <li id="tabsName">Работа с сайтом</li>
+                        <li id="tab2"> Tab 2 </li>
+                        <li id="tab3"> Tab 3 </li>
+                        <li id="tab4"> Tab 4 </li>
+                        <li id="tab5"> Tab 5 </li>
+                        <li id="tabsName1">Работа с заказом</li>
+                        <li id="tab6"> Tab 6</li>
+                        <li id="tab7"> Tab 7 </li>
+                        <li id="tab8"> Tab 8 </li>
+                        <li id="tab9"> Tab 9</li>
+                        <li id="tab10"> Tab 10 </li>
+                        <li id="tabsName2">Возврат</li>
+                        <li id="tab11"> Tab 11 </li>
+                        <li id="tab12"> Tab 12 </li>
+                    </ul>
+                </div>
+                <div class="tab_content">
+                    <div id="tab1_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table1">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table1" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table2">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table2" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table3">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table3" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table4">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table4" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table5">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table5" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="tab2_content">
+                        <h2 class="title-tab">тема</h2>
+
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table21">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table21" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table22">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table22" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table23">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table23" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table24">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table24" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table25">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table25" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div id="tab3_content">
+                        <h2 class="title-tab">тема</h2>
+
+                        <div class="content-wrap">
+                            <div class="container">
+
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table32">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table32" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table33">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table33" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table34">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table34" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table35">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table35" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="tab4_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table41">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table41" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table42">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table42" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table43">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table43" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table44">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table44" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table45">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table45" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab5_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table51">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table51" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table52">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table52" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table53">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table53" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table54">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table54" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table55">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table55" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="tab6_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table61">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table61" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table62">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table62" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table63">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table63" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table64">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table64" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table65">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table65" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="tab7_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table73">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table73" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table74">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table74" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table75">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table75" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="tab8_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table81">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table81" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table82">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table82" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table83">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table83" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table84">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table84" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table85">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table85" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="tab9_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table91">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table91" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table92">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table92" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table93">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table93" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table94">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table94" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table95">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table95" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="tab10_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table01">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table01" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table02">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table02" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table03">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table03" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table04">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table04" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table05">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table05" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="tab11_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table111">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table111" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table112">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table112" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table113">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table113" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table114">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table114" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table115">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table115" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div id="tab12_content">
+                        <h2 class="title-tab">тема</h2>
+                        <div class="content-wrap">
+                            <div class="container">
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table121">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                                    </div>
+                                    <div class="accordian-para acc-show" id="table121" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table122">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table122" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table123">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table123" style="display: none;">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordian-block">
+                                    <div class="ac-title" data-in="#table124">
+                                        <div class="plus-icon"></div>
+                                        <p>Lorem ipsum dolor sit amet, consetet ur adipiscing elit?</p>
+                                    </div>
+                                    <div class="accordian-para" id="table124" style="">
+                                        <p class="commn-para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie ipsum quam, et iaculis nibh
+                                            pellentesque vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <div class="footer">
+        <div class="container-fluid content-container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <a class="icon-link" href="">
+                            <img class="logo-img" src="images/11a.png" alt="">
+                        </a>
+                        <a href=""><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. </p></a>
+                        <a href=""><h2>Пользовательское соглашение</h2></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <h3 class="headline">Меню</h3>
+                        <ul>
+                            <li><a href="">Обратная сввязь</a></li>
+                            <li><a href="">Мои заказы</a></li>
+                            <li><a href="">Настройки</a></li>
+                            <li><a href="">О сервисе</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <h3 class="headline">Как купить</h3>
+                        <ul>
+                            <li><a href="">Оплата и доставка</a></li>
+                            <li><a href="">Возврат</a></li>
+                            <li><a href="">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <h3 class="headline">Партнерам</h3>
+                        <ul>
+                            <li><a href="">Как начать сотрудничество</a></li>
+                            <li><a href="">Справка для партнеров</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 no-pad">
+                    <div class="footer-box">
+                        <h3 class="headline">WOW в социальных сетях</h3>
+                        <ul>
+                            <li class="footer-icon"><a href=""><i class="icon-facebook"></i></a></li>
+                            <li class="footer-icon"><a href=""><i class="icon-instagram"></i></a></li>
+                            <li class="footer-icon"><a href=""><i class="icon-whatsapp"></i></a></li>
+                            <li class="footer-icon"><a href=""><i class="icon-vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-box">
+                        <h3 class="headline">Контакты</h3>
+                        <ul>
+                            <li><a href="tel:+996 777 00 44 88"><i class="icon-phone"></i> +996 777 00 44 88</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".first").owlCarousel({
+            items: 1,
+
+            nav: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            animateOut: 'fadeOut'
+        });
+    });
+
+    $(document).ready(function () {
+        $(".carousel").owlCarousel({
+            items: 4,
+            loop: true,
+            nav: true,
+            margin: 20
+
+        });
+    });
+
+    $(document).ready(function() {
+
+        $("#tab1_content").show();
+        $("#tab2_content").hide();
+        $("#tab3_content").hide();
+        $("#tab4_content").hide();
+        $("#tab5_content").hide();
+        $("#tab6_content").hide();
+        $("#tab7_content").hide();
+        $("#tab8_content").hide();
+        $("#tab9_content").hide();
+        $("#tab10_content").hide();
+        $("#tab11_content").hide();
+        $("#tab12_content").hide();
+
+        $("#tab1").click(function() {
+            $("#tab1_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab8_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab2").click(function() {
+            $("#tab1_content").hide();
+            $("#tab2_content").show();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab8_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab3").click(function() {
+            $("#tab1_content").hide();
+            $("#tab2_content").hide();
+            $("#tab3_content").show();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab8_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab4").click(function() {
+            $("#tab4_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab1_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab8_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab5").click(function() {
+            $("#tab5_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab1_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab8_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab6").click(function() {
+            $("#tab6_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab1_content").hide();
+            $("#tab7_content").hide();
+            $("#tab8_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab7").click(function() {
+            $("#tab7_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab1_content").hide();
+            $("#tab8_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab8").click(function() {
+            $("#tab8_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab1_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab9").click(function() {
+            $("#tab9_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab1_content").hide();
+            $("#tab8_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab10").click(function() {
+            $("#tab10_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab1_content").hide();
+            $("#tab9_content").hide();
+            $("#tab8_content").hide();
+            $("#tab11_content").hide();
+            $("#tab12_content").hide();
+        });
+
+        $("#tab11").click(function() {
+            $("#tab11_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab1_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab8_content").hide();
+            $("#tab12_content").hide();
+        });
+        $("#tab12").click(function() {
+            $("#tab12_content").show();
+            $("#tab2_content").hide();
+            $("#tab3_content").hide();
+            $("#tab4_content").hide();
+            $("#tab5_content").hide();
+            $("#tab6_content").hide();
+            $("#tab7_content").hide();
+            $("#tab1_content").hide();
+            $("#tab9_content").hide();
+            $("#tab10_content").hide();
+            $("#tab11_content").hide();
+            $("#tab8_content").hide();
+        });
+    });
+
+
+
+
+
+    function reset_acc() {
+        $('.ac-title').removeClass('acc-active');
+        $('.accordian-para').slideUp();
+        $('.plus-icon').removeClass('cross-icon');
+    }
+    $('.ac-title').click(function (e) {
+        e.preventDefault();
+        if ($(this).hasClass('acc-active'))
+        {
+            reset_acc();
+        }
+        else {
+            reset_acc();
+            var getID = $(this).attr('data-in');
+            $(getID).slideDown();
+            $(this).addClass('acc-active');
+            $(this).find('.plus-icon').addClass('cross-icon');
+        }
+    });
+
+
+
+
+</script>
+</body>
+</html>

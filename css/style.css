@@ -371,9 +371,39 @@ img { width: 100%; }
 
 #product-1 .reviews .reviews-title { font-family: 'Roboto'; font-weight: 600; font-size: 22px; color: #000000; margin-bottom: 15px; }
 
-#product-1 .reviews .review-stars { padding-top: 5px; padding-bottom: 5px; display: flex; align-items: center; color: #f7d96d; }
+#product-1 .reviews .review-stars { padding-top: 5px; padding-bottom: 5px; display: flex; align-items: center; color: #f7d96d; /* Rating styles */ }
 
-#product-1 .reviews .review-stars h3 { font-family: Roboto; font-size: 16px; color: #1B1C1C; }
+#product-1 .reviews .review-stars body { background: #FDFDFD; font-family: "Segoe WP","Segoe UI", Helvetica, Arial, sans-serif; text-align: center; }
+
+#product-1 .reviews .review-stars h1, #product-1 .reviews .review-stars h2 { color: #888; margin: 0; font-weight: normal; }
+
+#product-1 .reviews .review-stars h1 { padding-top: 1.5em; padding-bottom: 2em; }
+
+#product-1 .reviews .review-stars h2 { clear: both; color: #aaa; padding: 2em 0 0.3em; }
+
+#product-1 .reviews .review-stars em { display: block; margin: .5em auto 2em; color: #bbb; }
+
+#product-1 .reviews .review-stars p, #product-1 .reviews .review-stars p a { color: #aaa; text-decoration: none; }
+
+#product-1 .reviews .review-stars p a:hover, #product-1 .reviews .review-stars p a:focus { text-decoration: underline; }
+
+#product-1 .reviews .review-stars p + p { color: #bbb; margin-top: 2em; }
+
+#product-1 .reviews .review-stars .detail { position: absolute; text-align: right; right: 5px; bottom: 5px; width: 50%; }
+
+#product-1 .reviews .review-stars a[href*="intent"] { display: inline-block; margin-top: 0.4em; }
+
+#product-1 .reviews .review-stars .rating { width: 226px; margin: 0 auto 1em; font-size: 45px; overflow: hidden; }
+
+#product-1 .reviews .review-stars .rating input { float: right; opacity: 0; position: absolute; }
+
+#product-1 .reviews .review-stars .rating a, #product-1 .reviews .review-stars .rating label { float: right; color: #aaa; text-decoration: none; -webkit-transition: color .4s; -moz-transition: color .4s; -o-transition: color .4s; transition: color .4s; }
+
+#product-1 .reviews .review-stars .rating label:hover ~ label, #product-1 .reviews .review-stars .rating input:focus ~ label, #product-1 .reviews .review-stars .rating label:hover, #product-1 .reviews .review-stars .rating a:hover, #product-1 .reviews .review-stars .rating a:hover ~ a, #product-1 .reviews .review-stars .rating a:focus, #product-1 .reviews .review-stars .rating a:focus ~ a { color: orange; cursor: pointer; }
+
+#product-1 .reviews .review-stars .rating2 { direction: rtl; }
+
+#product-1 .reviews .review-stars .rating2 a { float: none; }
 
 #product-1 .reviews .review-sort { display: flex; padding-top: 5px; padding-bottom: 15px; border-bottom: 1px solid #040505; }
 
@@ -402,6 +432,10 @@ img { width: 100%; }
 #product-1 .div-description .description .buttons .to-buy:hover { cursor: pointer; background: rgba(255, 54, 53, 0.8); }
 
 #product-1 .div-description .description .quantity { display: flex; align-items: center; }
+
+#product-1 .div-description .description .quantity .add-button { width: 20px; height: 20px; background: inherit; }
+
+#product-1 .div-description .description .quantity .add-button:hover { color: #ff7676; cursor: pointer; }
 
 #product-1 .div-description .description .quantity h3 { font-family: 'Roboto'; font-size: 18px; font-weight: 500; margin-top: 15px; margin-bottom: 15px; margin-right: 10px; color: #040505; }
 
@@ -703,6 +737,70 @@ img { width: 100%; }
 
 #bascet .all-sum .push-item { margin-top: 15px; width: 80%; height: 30px; font-family: Roboto; font-size: 18px; font-weight: 500; color: #ffffff; background: #ff7676; border-radius: 5px; display: flex; justify-content: center; align-items: center; }
 
+#agreement { background: #e9ecef; padding: 20px 5% 40px 5%; }
+
+#agreement .text-box { margin-top: 15px; }
+
+#agreement .ul-agreement { padding-left: 17px; }
+
+#agreement .ul-agreement .li-agreement { list-style: disc; }
+
+#agreement h2 { font-family: 'Roboto'; font-size: 28px; font-weight: 600; color: #2d2f43; }
+
+#agreement h3 { font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
+
+#agreement h4 { font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
+
+#agreement p { font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
+
+#agreement a { font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
+
+#agreement a:hover { color: #ff7676; }
+
+#questions { background: #e9ecef; padding: 20px 0 40px 0; }
+
+#questions .tab_div { width: 100%; display: flex; }
+
+#questions .tab_content { padding: 1% 10px 10px 10px; width: 80%; }
+
+#questions .tabs_menu { padding-top: 1%; width: 20%; }
+
+#questions ul.tabs { padding: 0; }
+
+#questions #tab1, #questions #tab2, #questions #tab3, #questions #tab4, #questions #tab5, #questions #tab6, #questions #tab7, #questions #tab8, #questions #tab9, #questions #tab10, #questions #tab11, #questions #tab12 { display: flex; padding: 7px; width: 100%; font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #3a3a3ade; }
+
+#questions #tabsName, #questions #tabsName1, #questions #tabsName2 { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #3a3a3ade; display: flex; padding: 7px; width: 100%; background: #ff9e84f0; cursor: inherit; }
+
+#questions ul.tabs li { list-style-type: none; font-size: 18px; }
+
+#questions #tab1_content, #questions #tab2_content, #questions #tab3_content, #questions #tab4_content, #questions #tab5_content, #questions #tab6_content, #questions #tab7_content, #questions #tab8_content, #questions #tab9_content, #questions #tab10_content, #questions #tab11_content, #questions #tab12_content { background: #ffffff; height: auto; display: flex; color: #2d2d2d; flex-direction: column; }
+
+#questions #tab1_content .title-tab, #questions #tab2_content .title-tab, #questions #tab3_content .title-tab, #questions #tab4_content .title-tab, #questions #tab5_content .title-tab, #questions #tab6_content .title-tab, #questions #tab7_content .title-tab, #questions #tab8_content .title-tab, #questions #tab9_content .title-tab, #questions #tab10_content .title-tab, #questions #tab11_content .title-tab, #questions #tab12_content .title-tab { font-family: 'Roboto'; font-size: 20px; font-weight: 500; color: #3a3a3ade; padding: 5px; }
+
+#questions #tab1_content .content-wrap, #questions #tab2_content .content-wrap, #questions #tab3_content .content-wrap, #questions #tab4_content .content-wrap, #questions #tab5_content .content-wrap, #questions #tab6_content .content-wrap, #questions #tab7_content .content-wrap, #questions #tab8_content .content-wrap, #questions #tab9_content .content-wrap, #questions #tab10_content .content-wrap, #questions #tab11_content .content-wrap, #questions #tab12_content .content-wrap { padding: 23px 15px; width: 100%; }
+
+#questions #tab1_content .content-wrap hr, #questions #tab2_content .content-wrap hr, #questions #tab3_content .content-wrap hr, #questions #tab4_content .content-wrap hr, #questions #tab5_content .content-wrap hr, #questions #tab6_content .content-wrap hr, #questions #tab7_content .content-wrap hr, #questions #tab8_content .content-wrap hr, #questions #tab9_content .content-wrap hr, #questions #tab10_content .content-wrap hr, #questions #tab11_content .content-wrap hr, #questions #tab12_content .content-wrap hr { color: #9a9a9a; height: 1px; background: #ccc; border: 0; width: 10%; margin: 18px auto 21px; }
+
+#questions #tab1_content .content-wrap .accordian-block, #questions #tab2_content .content-wrap .accordian-block, #questions #tab3_content .content-wrap .accordian-block, #questions #tab4_content .content-wrap .accordian-block, #questions #tab5_content .content-wrap .accordian-block, #questions #tab6_content .content-wrap .accordian-block, #questions #tab7_content .content-wrap .accordian-block, #questions #tab8_content .content-wrap .accordian-block, #questions #tab9_content .content-wrap .accordian-block, #questions #tab10_content .content-wrap .accordian-block, #questions #tab11_content .content-wrap .accordian-block, #questions #tab12_content .content-wrap .accordian-block { padding: 2px 0; border: 1px solid #fff; margin: 0 0 20px 0; border-radius: 5px; box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.03); }
+
+#questions #tab1_content .content-wrap .ac-title, #questions #tab2_content .content-wrap .ac-title, #questions #tab3_content .content-wrap .ac-title, #questions #tab4_content .content-wrap .ac-title, #questions #tab5_content .content-wrap .ac-title, #questions #tab6_content .content-wrap .ac-title, #questions #tab7_content .content-wrap .ac-title, #questions #tab8_content .content-wrap .ac-title, #questions #tab9_content .content-wrap .ac-title, #questions #tab10_content .content-wrap .ac-title, #questions #tab11_content .content-wrap .ac-title, #questions #tab12_content .content-wrap .ac-title { position: relative; cursor: pointer; background: #eaeaea; }
+
+#questions #tab1_content .content-wrap .ac-title p, #questions #tab2_content .content-wrap .ac-title p, #questions #tab3_content .content-wrap .ac-title p, #questions #tab4_content .content-wrap .ac-title p, #questions #tab5_content .content-wrap .ac-title p, #questions #tab6_content .content-wrap .ac-title p, #questions #tab7_content .content-wrap .ac-title p, #questions #tab8_content .content-wrap .ac-title p, #questions #tab9_content .content-wrap .ac-title p, #questions #tab10_content .content-wrap .ac-title p, #questions #tab11_content .content-wrap .ac-title p, #questions #tab12_content .content-wrap .ac-title p { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #3a3a3ade; word-wrap: break-word; margin: 0; padding: 10px 32px 10px 51px; border-radius: 0; }
+
+#questions #tab1_content .content-wrap .accordian-para, #questions #tab2_content .content-wrap .accordian-para, #questions #tab3_content .content-wrap .accordian-para, #questions #tab4_content .content-wrap .accordian-para, #questions #tab5_content .content-wrap .accordian-para, #questions #tab6_content .content-wrap .accordian-para, #questions #tab7_content .content-wrap .accordian-para, #questions #tab8_content .content-wrap .accordian-para, #questions #tab9_content .content-wrap .accordian-para, #questions #tab10_content .content-wrap .accordian-para, #questions #tab11_content .content-wrap .accordian-para, #questions #tab12_content .content-wrap .accordian-para { display: none; border-top: none; margin: 0px 0 0 0; }
+
+#questions #tab1_content .content-wrap .commn-para-sm, #questions #tab2_content .content-wrap .commn-para-sm, #questions #tab3_content .content-wrap .commn-para-sm, #questions #tab4_content .content-wrap .commn-para-sm, #questions #tab5_content .content-wrap .commn-para-sm, #questions #tab6_content .content-wrap .commn-para-sm, #questions #tab7_content .content-wrap .commn-para-sm, #questions #tab8_content .content-wrap .commn-para-sm, #questions #tab9_content .content-wrap .commn-para-sm, #questions #tab10_content .content-wrap .commn-para-sm, #questions #tab11_content .content-wrap .commn-para-sm, #questions #tab12_content .content-wrap .commn-para-sm { font-family: 'Roboto'; font-size: 14px; font-weight: 400; color: #3a3a3ade; padding: 10px 20px 10px 50px; margin: 0 0 15px; }
+
+#questions #tab1_content .content-wrap .ac-title.acc-active p, #questions #tab2_content .content-wrap .ac-title.acc-active p, #questions #tab3_content .content-wrap .ac-title.acc-active p, #questions #tab4_content .content-wrap .ac-title.acc-active p, #questions #tab5_content .content-wrap .ac-title.acc-active p, #questions #tab6_content .content-wrap .ac-title.acc-active p, #questions #tab7_content .content-wrap .ac-title.acc-active p, #questions #tab8_content .content-wrap .ac-title.acc-active p, #questions #tab9_content .content-wrap .ac-title.acc-active p, #questions #tab10_content .content-wrap .ac-title.acc-active p, #questions #tab11_content .content-wrap .ac-title.acc-active p, #questions #tab12_content .content-wrap .ac-title.acc-active p { color: #ee60489c !important; }
+
+#questions #tab1_content .content-wrap .plus-icon, #questions #tab2_content .content-wrap .plus-icon, #questions #tab3_content .content-wrap .plus-icon, #questions #tab4_content .content-wrap .plus-icon, #questions #tab5_content .content-wrap .plus-icon, #questions #tab6_content .content-wrap .plus-icon, #questions #tab7_content .content-wrap .plus-icon, #questions #tab8_content .content-wrap .plus-icon, #questions #tab9_content .content-wrap .plus-icon, #questions #tab10_content .content-wrap .plus-icon, #questions #tab11_content .content-wrap .plus-icon, #questions #tab12_content .content-wrap .plus-icon { width: 20px; height: 20px; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background-size: contain; z-index: 99; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; background-repeat: no-repeat; }
+
+#questions p { font-size: 16px; color: #1B1C1C; }
+
+#questions ul.tabs li { display: inline-block; cursor: pointer; background: #ffffff; color: #1B1C1C; z-index: 0; }
+
+#questions ul.tabs li:hover:before { transform: scaleX(1); }
+
 footer .footer { width: 100%; border-top: 1px solid #2b4d8c; padding-top: 15px; padding-bottom: 55px; background: #f0f0f0; }
 
 footer .footer .no-pad { padding: 0; }
@@ -717,12 +815,12 @@ footer .footer .footer-box p { font-family: 'Roboto'; font-weight: 400; font-siz
 
 footer .footer .footer-box h2 { font-family: 'Roboto'; font-weight: 500; font-size: 16px; color: #000000; margin-top: 5px; }
 
-footer .footer .footer-box h2:hover { color: #808080; }
+footer .footer .footer-box h2:hover { color: #ff7676; }
 
 footer .footer .footer-box h3 { font-family: 'Roboto'; font-weight: 600; font-size: 16px; color: #000000; margin-bottom: 15px; margin-top: 9px; }
 
 footer .footer .footer-box li { font-family: 'Roboto'; font-weight: 500; font-size: 15px; color: #000000; margin-top: 10px; margin-bottom: 10px; }
 
-footer .footer .footer-box li:hover { color: #808080; }
+footer .footer .footer-box li:hover { color: #ff7676; }
 
 /*# sourceMappingURL=maps/style.css.map */
