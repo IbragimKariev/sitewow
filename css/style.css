@@ -69,7 +69,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholde
 
 @font-face { font-family: 'Roboto'; src: url("../fonts/Roboto-Medium_1.eot"); src: url("../fonts/Roboto-Medium_1.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium_1.woff2") format("woff2"), url("../fonts/Roboto-Medium_1.woff") format("woff"), url("../fonts/Roboto-Medium_1.ttf") format("truetype"), url("../fonts/Roboto-Medium_1.svg#Roboto-Medium") format("svg"); font-weight: 500; font-style: normal; }
 
-@font-face { font-family: 'fontello'; src: url("../fonts/fontello.eot?65307061"); src: url("../fonts/fontello.eot?65307061#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?65307061") format("woff2"), url("../fonts/fontello.woff?65307061") format("woff"), url("../fonts/fontello.ttf?65307061") format("truetype"), url("../fonts/fontello.svg?65307061#fontello") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'fontello'; src: url("../fonts/fontello.eot?61736740"); src: url("../fonts/fontello.eot?61736740#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?61736740") format("woff2"), url("../fonts/fontello.woff?61736740") format("woff"), url("../fonts/fontello.ttf?61736740") format("truetype"), url("../fonts/fontello.svg?61736740#fontello") format("svg"); font-weight: normal; font-style: normal; }
 
 [class^="icon-"]:before, [class*=" icon-"]:before { font-family: "fontello"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; /* opacity: .8; */ /* For safety - reset parent styles, that can break glyph codes*/ font-variant: normal; text-transform: none; /* fix buttons height, for twitter bootstrap */ line-height: 1em; /* Animation center compensation - margins should be symmetric */ /* remove if not needed */ margin-left: .2em; /* you can be more comfortable with increased icons size */ /* font-size: 120%; */ /* Font smoothing. That was taken from TWBS */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; /* Uncomment for 3D effect */ /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
@@ -112,9 +112,18 @@ input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholde
 .icon-user:before { content: '\e80c'; }
 
 /* '' */
+.icon-up-open:before { content: '\e80d'; }
+
+/* '' */
 .icon-location:before { content: '\f031'; }
 
 /* '' */
+.icon-circle:before { content: '\f111'; }
+
+/* '' */
+.icon-circle-thin:before { content: '\f1db'; }
+
+/* '' */
 .icon-whatsapp:before { content: '\f232'; }
 
 /* '' */
@@ -595,6 +604,18 @@ img { width: 100%; }
 
 #category-block .all_goods .dropdown .dropdown-menu .input1 .input_price { border: 1px solid #6c757d; border-radius: 3px; padding-left: 5px; }
 
+#category-block .all_goods .dropdown .dropdown-menu .check-in { display: flex; padding: 3px; margin: 5px; }
+
+#category-block .all_goods .dropdown .dropdown-menu .check-in label { display: flex; align-items: center; }
+
+#category-block .all_goods .dropdown .dropdown-menu .check-in h2 { font-weight: 400; font-family: 'Roboto'; font-size: 14px; color: #1B1C1C; }
+
+#category-block .all_goods .dropdown .dropdown-menu .check-in h2:hover { color: #ff7676; }
+
+#category-block .all_goods .dropdown .dropdown-menu #check, #category-block .all_goods .dropdown .dropdown-menu #check1, #category-block .all_goods .dropdown .dropdown-menu #check2, #category-block .all_goods .dropdown .dropdown-menu #check3, #category-block .all_goods .dropdown .dropdown-menu #check4, #category-block .all_goods .dropdown .dropdown-menu #check5 { -webkit-appearance: checkbox; margin-right: 5px; }
+
+#category-block .all_goods .dropdown .dropdown-menu #color-check, #category-block .all_goods .dropdown .dropdown-menu #color-check1, #category-block .all_goods .dropdown .dropdown-menu #color-check2, #category-block .all_goods .dropdown .dropdown-menu #color-check3, #category-block .all_goods .dropdown .dropdown-menu #color-check4, #category-block .all_goods .dropdown .dropdown-menu #color-check5 { -webkit-appearance: checkbox; margin-right: 5px; }
+
 #category-block .all_goods .dropdown .dropdown-menu .apply { width: 100%; height: 25px; background: #ff7676; color: #ffffff; font-family: Roboto; }
 
 #category-block .all_goods .product { position: relative; width: 100%; height: 260px; display: flex; flex-direction: column; border-radius: 5px; background: #f8f8f8; transition: all 0.4s; margin-bottom: 10px; }
@@ -757,7 +778,7 @@ img { width: 100%; }
 
 #agreement a:hover { color: #ff7676; }
 
-#questions { background: #e9ecef; padding: 20px 0 40px 0; }
+#questions { background: #e9ecef; padding: 20px 0 40px 0; min-height: 100vh; }
 
 #questions .tab_div { width: 100%; display: flex; }
 
@@ -769,11 +790,21 @@ img { width: 100%; }
 
 #questions #tab1, #questions #tab2, #questions #tab3, #questions #tab4, #questions #tab5, #questions #tab6, #questions #tab7, #questions #tab8, #questions #tab9, #questions #tab10, #questions #tab11, #questions #tab12 { display: flex; padding: 7px; width: 100%; font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #3a3a3ade; }
 
-#questions #tabsName, #questions #tabsName1, #questions #tabsName2 { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #3a3a3ade; display: flex; padding: 7px; width: 100%; background: #ff9e84f0; cursor: inherit; }
+#questions #tabsName, #questions #tabsName1, #questions #tabsName2 { font-family: 'Roboto'; font-size: 16px; font-weight: 500; display: flex; padding: 7px; width: 100%; background: #ff7676; cursor: inherit; color: #FFFfff; }
 
 #questions ul.tabs li { list-style-type: none; font-size: 18px; }
 
-#questions #tab1_content, #questions #tab2_content, #questions #tab3_content, #questions #tab4_content, #questions #tab5_content, #questions #tab6_content, #questions #tab7_content, #questions #tab8_content, #questions #tab9_content, #questions #tab10_content, #questions #tab11_content, #questions #tab12_content { background: #ffffff; height: auto; display: flex; color: #2d2d2d; flex-direction: column; }
+#questions #tab1_content, #questions #tab2_content, #questions #tab3_content, #questions #tab4_content, #questions #tab5_content, #questions #tab6_content, #questions #tab7_content, #questions #tab8_content, #questions #tab9_content, #questions #tab10_content, #questions #tab11_content, #questions #tab12_content { background: #ffffff; height: auto; display: flex; color: #2d2d2d; flex-direction: column; padding-left: 15px; padding-top: 15px; }
+
+#questions #tab1_content .wrap, #questions #tab2_content .wrap, #questions #tab3_content .wrap, #questions #tab4_content .wrap, #questions #tab5_content .wrap, #questions #tab6_content .wrap, #questions #tab7_content .wrap, #questions #tab8_content .wrap, #questions #tab9_content .wrap, #questions #tab10_content .wrap, #questions #tab11_content .wrap, #questions #tab12_content .wrap { width: 48%; }
+
+#questions #tab1_content .wrap .search, #questions #tab2_content .wrap .search, #questions #tab3_content .wrap .search, #questions #tab4_content .wrap .search, #questions #tab5_content .wrap .search, #questions #tab6_content .wrap .search, #questions #tab7_content .wrap .search, #questions #tab8_content .wrap .search, #questions #tab9_content .wrap .search, #questions #tab10_content .wrap .search, #questions #tab11_content .wrap .search, #questions #tab12_content .wrap .search { width: 100%; position: relative; }
+
+#questions #tab1_content .wrap .searchTerm, #questions #tab2_content .wrap .searchTerm, #questions #tab3_content .wrap .searchTerm, #questions #tab4_content .wrap .searchTerm, #questions #tab5_content .wrap .searchTerm, #questions #tab6_content .wrap .searchTerm, #questions #tab7_content .wrap .searchTerm, #questions #tab8_content .wrap .searchTerm, #questions #tab9_content .wrap .searchTerm, #questions #tab10_content .wrap .searchTerm, #questions #tab11_content .wrap .searchTerm, #questions #tab12_content .wrap .searchTerm { float: left; width: 100%; border: 3px solid #ff7676; padding: 5px; height: 36px; border-radius: 5px; outline: none; color: #3a3a3ade; }
+
+#questions #tab1_content .wrap .searchTerm:focus, #questions #tab2_content .wrap .searchTerm:focus, #questions #tab3_content .wrap .searchTerm:focus, #questions #tab4_content .wrap .searchTerm:focus, #questions #tab5_content .wrap .searchTerm:focus, #questions #tab6_content .wrap .searchTerm:focus, #questions #tab7_content .wrap .searchTerm:focus, #questions #tab8_content .wrap .searchTerm:focus, #questions #tab9_content .wrap .searchTerm:focus, #questions #tab10_content .wrap .searchTerm:focus, #questions #tab11_content .wrap .searchTerm:focus, #questions #tab12_content .wrap .searchTerm:focus { color: #3a3a3ade; }
+
+#questions #tab1_content .wrap .searchButton, #questions #tab2_content .wrap .searchButton, #questions #tab3_content .wrap .searchButton, #questions #tab4_content .wrap .searchButton, #questions #tab5_content .wrap .searchButton, #questions #tab6_content .wrap .searchButton, #questions #tab7_content .wrap .searchButton, #questions #tab8_content .wrap .searchButton, #questions #tab9_content .wrap .searchButton, #questions #tab10_content .wrap .searchButton, #questions #tab11_content .wrap .searchButton, #questions #tab12_content .wrap .searchButton { position: absolute; right: -50px; width: 40px; height: 36px; border: 1px solid #ff7676; background: #ff7676; text-align: center; color: #fff; border-radius: 5px; cursor: pointer; font-size: 20px; }
 
 #questions #tab1_content .title-tab, #questions #tab2_content .title-tab, #questions #tab3_content .title-tab, #questions #tab4_content .title-tab, #questions #tab5_content .title-tab, #questions #tab6_content .title-tab, #questions #tab7_content .title-tab, #questions #tab8_content .title-tab, #questions #tab9_content .title-tab, #questions #tab10_content .title-tab, #questions #tab11_content .title-tab, #questions #tab12_content .title-tab { font-family: 'Roboto'; font-size: 20px; font-weight: 500; color: #3a3a3ade; padding: 5px; }
 
