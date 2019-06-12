@@ -9,6 +9,7 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/media-style.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -21,9 +22,13 @@
     <div class="head">
         <div class="container-fluid head-cont content-container">
             <div class="row">
-                <div class="col-lg-7">
-
+                <div class="col-12 col-lg-7 col-md-7 col-sm-7 col-xl-7">
                     <div class="button-div">
+                        <div class="btn-menu">
+                            <div id="burger">
+                                <i></i>
+                            </div>
+                        </div>
                         <a href="index.html" class="block-icon"><img src="images/11a.png"></a>
                         <form>
 
@@ -40,10 +45,9 @@
                             </div>
 
                         </form>
-
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-12 col-lg-5 col-md-5 col-sm-5 col-xl-5">
                     <div class="loc-push">
                         <div class="icon-box"><a href="#"><i class="icon icon-heart-empty"></i>
                             <p> Избранное</p></a></div>
@@ -52,8 +56,7 @@
                         <div class="icon-box"><a href="#"> <i class="icon icon-basket"></i>
                             <p>Моя корзина</p></a></div>
                         <div class="drop">
-                            <button class="btn  dropdown-toggle drop-valute" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn  dropdown-toggle drop-valute" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 $
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -65,7 +68,6 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
     </div>
@@ -453,6 +455,24 @@
         </ul>
     </div>
 </div>
+<div class="nav-mini">
+    <div class="title-mini-nav"></div>
+    <ul class="nav-ul-mini">
+        <li class="nav-li-mini"><a href="#"><h4>категория</h4><i class="icon-up-open"></i> </a></li>
+        <li class="nav-li-mini"><a href="#"><h4>категория</h4><i class="icon-up-open"></i> </a></li>
+        <li class="nav-li-mini"><a href="#"><h4>категория</h4><i class="icon-up-open"></i> </a></li>
+        <li class="nav-li-mini"><a href="#"><h4>категория</h4><i class="icon-up-open"></i> </a></li>
+    </ul>
+
+    <div class="wrap-mini">
+        <div class="search-mini">
+            <input type="text" class="searchTerm-mini" placeholder="What are you looking for?">
+            <button type="submit" class="searchButton">
+                <i class="icon-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
 
 <main>
     <section id="sec-1">
@@ -467,7 +487,7 @@
     <section id="main-content">
         <div class="container-fluid content-container">
             <div class="row">
-                <div class="col-lg-9">
+                <div class="col-lg-9 col-md-12 col-sm-12 col-xl-9">
                     <div class="main-div">
                         <div class="clothes" id="woman-cloth">
                             <div class="img-wom" style="background-image: url(images/Screenshot_2.jpg)"></div>
@@ -800,11 +820,11 @@
                             <div class="img-wom">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-6"><a class="elements" href="#" alt="">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6"><a class="elements" href="#" alt="">
                                             <div class="wom-bag-sh"
                                                  style="background-image: url(images/1366x768.jpg)"></div>
                                             <h2>Женщинам</h2></a></div>
-                                        <div class="col-lg-6"><a class="elements" href="#" alt="">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6"><a class="elements" href="#" alt="">
                                             <div class="wom-bag-sh"
                                                  style="background-image: url(images/Loafers-GQ-03222019_3x2.jpg)"></div>
                                             <h2>Мужчинам</h2></a></div>
@@ -914,126 +934,9 @@
                             </ul>
                         </div>
 
-
-                        <div class="clothes" id="accessories">
-                            <div class="img-wom">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-6"><a class="elements" href="#" alt="">
-                                            <div class="wom-bag-sh"
-                                                 style="background-image: url(images/Women+accessories.jpg)"></div>
-                                            <h2>Женщинам</h2></a></div>
-                                        <div class="col-lg-6"><a class="elements" href="#" alt="">
-                                            <div class="wom-bag-sh"
-                                                 style="background-image: url(images/featured-image-10_kdst.jpg)"></div>
-                                            <h2>Мужчинам</h2></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="cloth-t"><h3>Аксессуары</h3><span>новинки</span><span class="clothspan">смотреть все</span></a>
-                            <ul class="carousel owl-carousel ">
-                                <li class="item-product">
-                                    <div class="product">
-                                        <div class="product-image">
-                                            <img src="images/product.jpg" alt=""></div>
-
-                                        <div class="product-text">
-                                            <h2>1589 SOM</h2>
-                                            <p>Est et modo omittam, elit dolores molestie pro eu, duis iudicabit ne duo. Ex verear deseruisse est, his legere possit theophrastus ut</p>
-                                            <button class="more" type="button"><a href="product.html" target="_blank">подробнее</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="item-product">
-                                    <div class="product">
-                                        <div class="product-image">
-                                            <img src="images/product.jpg" alt=""></div>
-
-                                        <div class="product-text">
-                                            <h2>1589 SOM</h2>
-                                            <p>Est et modo omittam, elit dolores molestie pro eu, duis iudicabit ne duo. Ex verear deseruisse est, his legere possit theophrastus ut</p>
-                                            <button class="more" type="button"><a href="product.html" target="_blank">подробнее</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="item-product">
-                                    <div class="product">
-                                        <div class="product-image">
-                                            <img src="images/product.jpg" alt=""></div>
-
-                                        <div class="product-text">
-                                            <h2>1589 SOM</h2>
-                                            <p>Est et modo omittam, elit dolores molestie pro eu, duis iudicabit ne duo. Ex verear deseruisse est, his legere possit theophrastus ut</p>
-                                            <button class="more" type="button"><a href="product.html" target="_blank">подробнее</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="item-product">
-                                    <div class="product">
-                                        <div class="product-image">
-                                            <img src="images/product.jpg" alt=""></div>
-
-                                        <div class="product-text">
-                                            <h2>1589 SOM</h2>
-                                            <p>Est et modo omittam, elit dolores molestie pro eu, duis iudicabit ne duo. Ex verear deseruisse est, his legere possit theophrastus ut</p>
-                                            <button class="more" type="button"><a href="product.html" target="_blank">подробнее</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="item-product">
-                                    <div class="product">
-                                        <div class="product-image">
-                                            <img src="images/product.jpg" alt=""></div>
-
-                                        <div class="product-text">
-                                            <h2>1589 SOM</h2>
-                                            <p>Est et modo omittam, elit dolores molestie pro eu, duis iudicabit ne duo. Ex verear deseruisse est, his legere possit theophrastus ut</p>
-                                            <button class="more" type="button"><a href="product.html" target="_blank">подробнее</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="item-product">
-                                    <div class="product">
-                                        <div class="product-image">
-                                            <img src="images/product.jpg" alt=""></div>
-
-                                        <div class="product-text">
-                                            <h2>1589 SOM</h2>
-                                            <p>Est et modo omittam, elit dolores molestie pro eu, duis iudicabit ne duo. Ex verear deseruisse est, his legere possit theophrastus ut</p>
-                                            <button class="more" type="button"><a href="product.html" target="_blank">подробнее</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="item-product">
-                                    <div class="product">
-                                        <div class="product-image">
-                                            <img src="images/product.jpg" alt=""></div>
-
-                                        <div class="product-text">
-                                            <h2>1589 SOM</h2>
-                                            <p>Est et modo omittam, elit dolores molestie pro eu, duis iudicabit ne duo. Ex verear deseruisse est, his legere possit theophrastus ut</p>
-                                            <button class="more" type="button"><a href="product.html" target="_blank">подробнее</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="item-product">
-                                    <div class="product">
-                                        <div class="product-image">
-                                            <img src="images/product.jpg" alt=""></div>
-
-                                        <div class="product-text">
-                                            <h2>1589 SOM</h2>
-                                            <p>Est et modo omittam, elit dolores molestie pro eu, duis iudicabit ne duo. Ex verear deseruisse est, his legere possit theophrastus ut</p>
-                                            <button class="more" type="button"><a href="product.html" target="_blank">подробнее</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 no-mini-banners">
                     <div class="banners">
                         <div class="banner" style="background-image: url(images/Banners_01_Preview4.jpg)"></div>
                         <div class="banner-text">
@@ -1094,7 +997,7 @@
     <div class="footer">
         <div class="container-fluid content-container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <a class="icon-link" href="">
                             <img class="logo-img" src="images/11a.png" alt="">
@@ -1104,7 +1007,7 @@
                         <a href=""><h2>Пользовательское соглашение</h2></a>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <h3 class="headline">Меню</h3>
                         <ul>
@@ -1115,7 +1018,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <h3 class="headline">Как купить</h3>
                         <ul>
@@ -1125,7 +1028,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <h3 class="headline">Партнерам</h3>
                         <ul>
@@ -1134,7 +1037,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 no-pad">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2 no-pad">
                     <div class="footer-box">
                         <h3 class="headline">WOW в социальных сетях</h3>
                         <ul>
@@ -1145,7 +1048,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <h3 class="headline">Контакты</h3>
                         <ul>
@@ -1179,10 +1082,30 @@
 
     $(document).ready(function () {
         $(".carousel").owlCarousel({
-            items: 4,
             loop: true,
             nav: true,
-            margin: 20
+            margin: 20,
+            responsive:{
+                200:{
+                    margin: 35,
+                    items:2,
+                },
+                500:{
+                    margin: 35,
+                    items:3,
+                },
+                768:{
+                    margin: 35,
+                    items:3,
+                },
+                800:{
+                    margin: 35,
+                    items:4,
+                },
+                1000:{
+                    items:4,
+                }
+            }
 
         });
     });
