@@ -9,8 +9,9 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/media-style.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/JavaScript" src="js/cloud.js"></script>
@@ -25,9 +26,13 @@
     <div class="head">
         <div class="container-fluid head-cont content-container">
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xl-7">
-
+                <div class="col-12 col-lg-7 col-md-7 col-sm-7 col-xl-7">
                     <div class="button-div">
+                        <div class="btn-menu">
+                            <div id="burger">
+                                <i></i>
+                            </div>
+                        </div>
                         <a href="index.html" class="block-icon"><img src="images/11a.png"></a>
                         <form>
 
@@ -44,20 +49,19 @@
                             </div>
 
                         </form>
-
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xl-5">
+                <div class="col-12 col-lg-5 col-md-5 col-sm-5 col-xl-5">
                     <div class="loc-push">
                         <div class="icon-box"><a href="#"><i class="icon icon-heart-empty"></i>
                             <p> Избранное</p></a></div>
-                        <div class="icon-box"><a href="#"> <i class=" icon icon-user-o"></i>
+                        <div class="icon-box"><a href="#"> <i class=" icon icon-user"></i>
                             <p>Войти</p></a></div>
-                        <div class="icon-box"><a href="#"> <i class="icon icon-cart-plus"></i>
+                        <div class="icon-box"><a href="#"> <i class="icon icon-basket"></i>
                             <p>Моя корзина</p></a></div>
                         <div class="drop">
                             <button class="btn  dropdown-toggle drop-valute" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                $
+                                <h2 class="valute">  $</h2>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#">RUB</a>
@@ -68,7 +72,6 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
     </div>
@@ -84,7 +87,8 @@
                     <li class="all_category-items">
                         <ul>
                             <li class="link-category"><a href="category.html" target="_blank">Женская одежда</a></li>
-                            <li class="link-category"><a href="category.html" target="_blank">Женская одежда больших размеров</a></li>
+                            <li class="link-category"><a href="category.html" target="_blank">Женская одежда больших
+                                размеров</a></li>
                             <li class="link-category"><a href="category.html" target="_blank">Мужская одежда</a></li>
                             <li class="link-category"><a href="category.html" target="_blank">Детская одежда</a></li>
 
@@ -455,6 +459,24 @@
         </ul>
     </div>
 </div>
+<div class="nav-mini">
+    <div class="title-mini-nav"></div>
+    <ul class="nav-ul-mini">
+        <li class="nav-li-mini"><a href="#"><h4>категория</h4><i class="icon-up-open"></i> </a></li>
+        <li class="nav-li-mini"><a href="#"><h4>категория</h4><i class="icon-up-open"></i> </a></li>
+        <li class="nav-li-mini"><a href="#"><h4>категория</h4><i class="icon-up-open"></i> </a></li>
+        <li class="nav-li-mini"><a href="#"><h4>категория</h4><i class="icon-up-open"></i> </a></li>
+    </ul>
+
+    <div class="wrap-mini">
+        <div class="search-mini">
+            <input type="text" class="searchTerm-mini" placeholder="What are you looking for?">
+            <button type="submit" class="searchButton">
+                <i class="icon-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
 <main>
 
     <section id="product-1">
@@ -469,7 +491,7 @@
                 </ol>
             </nav>
             <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xl-5">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-xl-5">
                     <div class="image-var">
 
                            <ul class="image-item owl-product owl-carousel owl-theme">
@@ -542,7 +564,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xl-7">
+                <div class="col-lg-7 col-md-12 col-sm-12 col-xl-7">
                     <div class="div-description">
                         <div class="description">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -830,7 +852,7 @@
     <div class="footer">
         <div class="container-fluid content-container">
             <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-12 col-xl-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <a class="icon-link" href="">
                             <img class="logo-img" src="images/11a.png" alt="">
@@ -840,7 +862,7 @@
                         <a href=""><h2>Пользовательское соглашение</h2></a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-xl-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <h3 class="headline">Меню</h3>
                         <ul>
@@ -851,7 +873,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-xl-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <h3 class="headline">Как купить</h3>
                         <ul>
@@ -861,7 +883,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-xl-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <h3 class="headline">Партнерам</h3>
                         <ul>
@@ -870,7 +892,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-xl-2 no-pad">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2 no-pad">
                     <div class="footer-box">
                         <h3 class="headline">WOW в социальных сетях</h3>
                         <ul>
@@ -881,7 +903,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 col-xl-2">
+                <div class="col-12 col-lg-2 col-md-6 col-sm-6 col-xl-2">
                     <div class="footer-box">
                         <h3 class="headline">Контакты</h3>
                         <ul>
@@ -942,7 +964,33 @@
             margin: 20,
             autoplayTimeout: 4000,
             slideSpeed: 1000,
-            dots: false
+            dots: false,
+            responsive:{
+                200:{
+                    margin: 3,
+                    items:3,
+                },
+                500:{
+                    margin: 10,
+                    items:3,
+                },
+                768:{
+                    margin: 20,
+                    items:4,
+                },
+                992:{
+                    margin: 35,
+                    items:3,
+                },
+                1000:{
+                    items:3,
+                    margin: 15,
+                },
+                1200:{
+                    items:4,
+                    margin: 20,
+                }
+            }
         });
     });
 
@@ -951,7 +999,37 @@
             items: 3,
             loop: true,
             nav: true,
-            margin: 30
+            margin: 30,
+            responsive:{
+                200:{
+                    margin: 0,
+                    items:1,
+                },
+                500:{
+                    margin: 5,
+                    items:2,
+                },
+                768:{
+                    margin: 15,
+                    items:3,
+                },
+                800:{
+                    margin: 20,
+                    items:3,
+                },
+                992:{
+                    items:3,
+                    margin: 25,
+                },
+                1000:{
+                    items:3,
+                    margin: 25,
+                },
+                1200:{
+                    items:3,
+                    margin: 35,
+                }
+            }
 
         });
     });

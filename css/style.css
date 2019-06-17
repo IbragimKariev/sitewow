@@ -134,7 +134,7 @@ a { color: inherit; }
 
 a:hover { color: inherit; text-decoration: inherit; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; font-size: 10px; }
 
 img { width: 100%; }
 
@@ -150,17 +150,17 @@ img { width: 100%; }
 
 .box .search-bar { margin-left: 18px; height: 34px; width: 300px; border-radius: 40px; display: flex; align-items: center; padding: 0 0 0 20px; position: relative; background: #fff; }
 
-.box .input { border: none; height: 25px; width: 74%; color: #1b1b1b; font-size: 15px; outline: none; position: absolute; bottom: 1px; }
+.box .input { border: none; height: 25px; width: 74%; color: #1b1b1b; font-size: 1.5rem; outline: none; position: absolute; bottom: 1px; }
 
-.box .input:not(:placeholder-shown) + .label { font-size: 9px; top: 3px; color: #6c757d; }
+.box .input:not(:placeholder-shown) + .label { font-size: 0.9rem; top: 3px; color: #6c757d; }
 
-.box .input:focus ~ .label { font-size: 9px; top: 3px; color: #4279a3; transition: all 0.5s ease; }
+.box .input:focus ~ .label { font-size: 0.9rem; top: 3px; color: #4279a3; transition: all 0.5s ease; }
 
 .box .label { color: #aaaaaa; position: absolute; top: 9px; pointer-events: none; transition: all 0.5s ease; }
 
 .box .search-btn { background: #ff7676; border-radius: 20px; height: 34px; min-width: 53px; display: flex; align-items: center; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); justify-content: center; cursor: pointer; right: 2px; position: absolute; transition: all 1s ease; }
 
-.box .search-icon { font-size: 20px; color: #ffffff; }
+.box .search-icon { font-size: 2.0rem; color: #ffffff; }
 
 .box .highlight { width: 0px; height: 1px; background: #4279a3; position: absolute; bottom: 4px; transition: all 1s ease; }
 
@@ -168,9 +168,13 @@ img { width: 100%; }
 
 .loc-push { display: flex; align-items: center; justify-content: space-around; float: right; height: 100%; }
 
+.loc-push .drop .dropdown-toggle { display: flex; align-items: center; }
+
+.loc-push .drop .valute { font-size: 1.6rem; }
+
 .adress { display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; }
 
-.adress a { font-family: 'Roboto'; color: #040505; font-size: 15px; font-weight: 700; }
+.adress a { font-family: 'Roboto'; color: #040505; font-size: 1.5rem; font-weight: 700; }
 
 .icon-box:nth-child(3) { padding-right: 0; }
 
@@ -182,7 +186,7 @@ img { width: 100%; }
 
 .icon-box .dropdown-menu { z-index: 999999999 !important; }
 
-.icon-box a { display: flex; font-family: 'Roboto'; color: #040505; font-size: 15px; font-weight: 700; }
+.icon-box a { display: flex; font-family: 'Roboto'; color: #040505; font-size: 1.5rem; font-weight: 700; }
 
 .icon-box a:hover { text-decoration: none; color: #ff7676; transition: all 0.2s; }
 
@@ -196,7 +200,7 @@ img { width: 100%; }
 
 .nav-li { display: inline-block; height: 100%; }
 
-.nav-li a { font-family: 'Roboto'; font-weight: 600; font-size: 16px; color: #191919; height: 100%; }
+.nav-li a { font-family: 'Roboto'; font-weight: 600; font-size: 1.6rem; color: #191919; height: 100%; }
 
 .nav-li a:hover { text-decoration: none; color: #ff7676; transition: all 0.2s; }
 
@@ -228,7 +232,7 @@ img { width: 100%; }
 
 .nav-li:hover .all_category-items { visibility: visible; opacity: 1; transition: all 0.4s; }
 
-.nav-li .category-items .title-category { font-family: 'Roboto'; font-weight: 600; font-size: 24px; color: #000000; padding-top: 15px; padding-bottom: 15px; border-bottom: 2px solid #040505; }
+.nav-li .category-items .title-category { font-family: 'Roboto'; font-weight: 600; font-size: 2.4rem; color: #000000; padding-top: 15px; padding-bottom: 15px; border-bottom: 2px solid #040505; }
 
 .nav-li .category-items .un-category { display: flex; justify-content: space-around; padding-left: 5%; padding-right: 5%; flex-wrap: wrap; }
 
@@ -240,9 +244,9 @@ img { width: 100%; }
 
 .nav-li .category-items .un-category .un-category-items .subcategory a:hover { color: #ff767687; }
 
-.nav-li .category-items .un-category .title-subcategory { font-family: 'Roboto'; font-weight: 600; font-size: 19px; color: #000000; margin-top: 5px; margin-bottom: 5px; }
+.nav-li .category-items .un-category .title-subcategory { font-family: 'Roboto'; font-weight: 600; font-size: 1.9rem; color: #000000; margin-top: 5px; margin-bottom: 5px; }
 
-.nav-mini { padding: 1% 0 1% 0; z-index: 9; position: absolute; left: -50%; top: 0; width: 50%; height: 100vh; display: flex; background: #f0f0f0; flex-direction: column; justify-content: flex-start; align-items: center; transition: all 0.6s; }
+.nav-mini { z-index: 9999999; padding: 1% 0 1% 0; position: absolute; left: -50%; top: 0; width: 50%; height: 100vh; display: flex; background: #f0f0f0; flex-direction: column; justify-content: flex-start; align-items: center; transition: all 0.6s; }
 
 .nav-mini .wrap-mini { margin-top: 2px; width: 94%; padding: 1%; background: #FFFfff; }
 
@@ -252,7 +256,7 @@ img { width: 100%; }
 
 .nav-mini .wrap-mini .searchTerm-mini:focus { color: #3a3a3ade; }
 
-.nav-mini .wrap-mini .searchButton { position: absolute; right: -50px; width: 40px; height: 36px; border: 1px solid #ff7676; background: #ff7676; text-align: center; color: #fff; border-radius: 5px; cursor: pointer; font-size: 20px; }
+.nav-mini .wrap-mini .searchButton { position: absolute; right: -50px; width: 40px; height: 36px; border: 1px solid #ff7676; background: #ff7676; text-align: center; color: #fff; border-radius: 5px; cursor: pointer; font-size: 2.0rem; }
 
 .nav-mini .title-mini-nav { margin-bottom: 15px; width: 100%; height: 50px; background: #FFFfff; }
 
@@ -260,9 +264,9 @@ img { width: 100%; }
 
 .nav-mini .nav-ul-mini .nav-li-mini { margin-bottom: 9px; }
 
-.nav-mini .nav-ul-mini .nav-li-mini a { color: #1B1C1C; font-family: 'Roboto'; font-size: 16px; font-weight: 400; display: flex; width: 100%; justify-content: space-between; align-items: center; }
+.nav-mini .nav-ul-mini .nav-li-mini a { color: #1B1C1C; font-family: 'Roboto'; font-size: 1.6rem; font-weight: 400; display: flex; width: 100%; justify-content: space-between; align-items: center; }
 
-.nav-mini .nav-ul-mini .nav-li-mini a .icon-up-open { transform: rotate(90deg); font-size: 14px; font-weight: 300; color: #e0e0e0; }
+.nav-mini .nav-ul-mini .nav-li-mini a .icon-up-open { transform: rotate(90deg); font-size: 1.4rem; font-weight: 300; color: #e0e0e0; }
 
 #sec-1 { background: #f8f9fa; width: 100%; height: 100vh; position: relative; }
 
@@ -316,11 +320,11 @@ img { width: 100%; }
 
 #main-content .clothes .carousel .item-product .product .product-text { background: #ffffff; position: absolute; bottom: -92px; border-radius: 5px; transition: all 0.4s; }
 
-#main-content .clothes .carousel .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #040505; }
+#main-content .clothes .carousel .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #040505; }
 
-#main-content .clothes .carousel .item-product .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 14px; font-weight: 400; color: #040505; }
+#main-content .clothes .carousel .item-product .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.4rem; font-weight: 400; color: #040505; }
 
-#main-content .clothes .carousel .item-product .product .product-text .more { width: 100%; height: 25px; background: #ff7676; display: flex; color: #ffffff; font-family: 'Roboto'; }
+#main-content .clothes .carousel .item-product .product .product-text .more { font-size: 1.4rem; width: 100%; height: 25px; background: #ff7676; display: flex; color: #ffffff; font-family: 'Roboto'; }
 
 #main-content .clothes .carousel .item-product .product .product-text .more a { width: 100%; height: 100%; }
 
@@ -334,17 +338,17 @@ img { width: 100%; }
 
 #main-content .clothes .cloth-t { text-decoration: none; color: #000000; font-family: 'Roboto'; font-weight: 500; }
 
-#main-content .clothes .cloth-t h3 { margin-right: 13px; font-size: 18px; display: inline-block; }
+#main-content .clothes .cloth-t h3 { margin-right: 13px; font-size: 1.8rem; display: inline-block; }
 
 #main-content .clothes .cloth-t h3:hover { color: grey; }
 
-#main-content .clothes .cloth-t span { font-family: 'Roboto'; font-weight: 400; margin-right: 14px; display: inline-block; color: #666666; }
+#main-content .clothes .cloth-t span { font-family: 'Roboto'; font-weight: 400; margin-right: 14px; display: inline-block; color: #666666; font-size: 1.4rem; }
 
 #main-content .img-wom { width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 23px; }
 
 #main-content .elements { position: relative; }
 
-#main-content .elements h2 { position: absolute; bottom: 20px; left: 10px; text-decoration: none; color: #ffffff; font-family: 'Roboto'; font-size: 22px; font-weight: 600; }
+#main-content .elements h2 { position: absolute; bottom: 20px; left: 10px; text-decoration: none; color: #ffffff; font-family: 'Roboto'; font-size: 2.2rem; font-weight: 600; }
 
 #main-content .elements:hover h2 { color: #F5F5DC; transform: scale(1.01); }
 
@@ -358,11 +362,11 @@ img { width: 100%; }
 
 #main-content .banners .banner-text { padding: 10px; display: flex; flex-direction: column; align-items: flex-start; position: absolute; bottom: -135px; background: rgba(0, 0, 0, 0.6); font-family: 'Roboto'; color: #ffffff; transition: all 0.6s; }
 
-#main-content .banners .banner-text h2 { font-size: 16px; }
+#main-content .banners .banner-text h2 { font-size: 1.6rem; }
 
-#main-content .banners .banner-text p { font-size: 13px; font-weight: 400; margin-top: 6px; margin-bottom: 10px; line-height: 16px; font-style: italic; color: #dde0e2; }
+#main-content .banners .banner-text p { font-size: 1.3rem; font-weight: 400; margin-top: 6px; margin-bottom: 10px; line-height: 16px; font-style: italic; color: #dde0e2; }
 
-#main-content .banners .banner-text .banner-button { width: 50px; height: 18px; background: #ff7676; border-radius: 2px; font-size: 14px; display: flex; align-items: center; justify-content: center; font-family: 'Roboto'; }
+#main-content .banners .banner-text .banner-button { width: 50px; height: 18px; background: #ff7676; border-radius: 2px; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; font-family: 'Roboto'; }
 
 #main-content .banners:hover .banner { transform: scale(1.06); transition: all 0.5s; filter: brightness(75%); }
 
@@ -371,6 +375,8 @@ img { width: 100%; }
 #product-1 { padding-top: 5px; padding-bottom: 25px; background: #f8f9fa; }
 
 #product-1 .breadcrumb { background: #f8f9fa !important; }
+
+#product-1 .breadcrumb .breadcrumb-item { font-family: 'Roboto'; font-size: 1.4rem; }
 
 #product-1 .breadcrumb a:hover { color: #ff7676; }
 
@@ -400,7 +406,7 @@ img { width: 100%; }
 
 #product-1 .reviews { width: 100%; padding-top: 25px; padding-bottom: 25px; padding-left: 15px; background: #FFFFFF; margin-top: 10px; }
 
-#product-1 .reviews .reviews-title { font-family: 'Roboto'; font-weight: 600; font-size: 22px; color: #000000; margin-bottom: 15px; }
+#product-1 .reviews .reviews-title { font-family: 'Roboto'; font-weight: 600; font-size: 2.2rem; color: #000000; margin-bottom: 15px; }
 
 #product-1 .reviews .review-stars { padding-top: 5px; padding-bottom: 5px; display: flex; align-items: center; color: #f7d96d; /* Rating styles */ }
 
@@ -424,7 +430,7 @@ img { width: 100%; }
 
 #product-1 .reviews .review-stars a[href*="intent"] { display: inline-block; margin-top: 0.4em; }
 
-#product-1 .reviews .review-stars .rating { width: 226px; margin: 0 auto 1em; font-size: 45px; overflow: hidden; }
+#product-1 .reviews .review-stars .rating { width: 226px; margin: 0 auto 1em; font-size: 4.5rem; overflow: hidden; }
 
 #product-1 .reviews .review-stars .rating input { float: right; opacity: 0; position: absolute; }
 
@@ -446,43 +452,47 @@ img { width: 100%; }
 
 #product-1 .div-description .description { display: flex; flex-direction: column; justify-content: left; background: #ffffff; padding: 15px; }
 
-#product-1 .div-description .description p { font-family: 'Roboto'; font-size: 16px; font-weight: 400; color: #1B1C1C; }
+#product-1 .div-description .description p { font-family: 'Roboto'; font-size: 1.6rem; font-weight: 400; color: #1B1C1C; }
 
-#product-1 .div-description .description .price { font-family: 'Roboto'; font-size: 22px; font-weight: 600; margin-top: 15px; margin-bottom: 15px; }
+#product-1 .div-description .description .price { font-family: 'Roboto'; font-size: 2.2rem; font-weight: 600; margin-top: 15px; margin-bottom: 15px; }
 
 #product-1 .div-description .description .price span { color: rgba(242, 86, 58, 0.98); }
 
 #product-1 .div-description .description .buttons { display: flex; }
 
-#product-1 .div-description .description .buttons .now-buy { width: 166px; height: 50px; border: 1px solid #FF7676; border-radius: 10px; background: #ffffff; font-size: 18px; color: #040505; font-family: 'Roboto'; font-weight: 500; margin-right: 15px; }
+#product-1 .div-description .description .buttons .now-buy { width: 166px; height: 50px; border: 1px solid #FF7676; border-radius: 10px; background: #ffffff; font-size: 1.8rem; color: #040505; font-family: 'Roboto'; font-weight: 500; margin-right: 15px; }
 
 #product-1 .div-description .description .buttons .now-buy:hover { cursor: pointer; background: rgba(255, 54, 53, 0.8); }
 
-#product-1 .div-description .description .buttons .to-buy { width: 166px; height: 50px; background: rgba(255, 118, 118, 0.8); border-radius: 10px; font-size: 18px; color: #040505; font-family: 'Roboto'; font-weight: 500; }
+#product-1 .div-description .description .buttons .to-buy { width: 166px; height: 50px; background: rgba(255, 118, 118, 0.8); border-radius: 10px; font-size: 1.8rem; color: #040505; font-family: 'Roboto'; font-weight: 500; }
 
 #product-1 .div-description .description .buttons .to-buy:hover { cursor: pointer; background: rgba(255, 54, 53, 0.8); }
 
 #product-1 .div-description .description .quantity { display: flex; align-items: center; }
 
+#product-1 .div-description .description .quantity span { font-size: 1.6rem; }
+
 #product-1 .div-description .description .quantity .add-button { width: 20px; height: 20px; background: inherit; }
 
 #product-1 .div-description .description .quantity .add-button:hover { color: #ff7676; cursor: pointer; }
 
-#product-1 .div-description .description .quantity h3 { font-family: 'Roboto'; font-size: 18px; font-weight: 500; margin-top: 15px; margin-bottom: 15px; margin-right: 10px; color: #040505; }
+#product-1 .div-description .description .quantity h3 { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 500; margin-top: 15px; margin-bottom: 15px; margin-right: 10px; color: #040505; }
 
-#product-1 .div-description .description .quantity .value { font-family: 'Roboto'; font-size: 18px; font-weight: 500; margin-right: 3px; margin-left: 3px; color: #040505; }
+#product-1 .div-description .description .quantity .value { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 500; margin-right: 3px; margin-left: 3px; color: #040505; }
 
-#product-1 .div-description .description .color { font-family: 'Roboto'; font-size: 18px; font-weight: 500; color: #040505; }
+#product-1 .div-description .description .color { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 500; color: #040505; }
 
 #product-1 .div-description .description .color span { color: #6c757d; }
 
 #product-1 .div-description .description .dimensions { display: flex; flex-direction: column; margin-top: 15px; margin-bottom: 15px; }
 
-#product-1 .div-description .description .dimensions .dimensions-h2 { font-family: 'Roboto'; font-size: 18px; font-weight: 500; color: #040505; margin-bottom: 16px; }
+#product-1 .div-description .description .dimensions .dimensions-h2 { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 500; color: #040505; margin-bottom: 16px; }
 
 #product-1 .div-description .description .dimensions ul { display: flex; }
 
 #product-1 .div-description .description .dimensions ul li { position: relative; margin-right: 15px; }
+
+#product-1 .div-description .description .dimensions ul li a { font-family: 'Roboto'; font-size: 1.4rem; }
 
 #product-1 .div-description .description .dimensions ul li:hover .more-description { visibility: visible; }
 
@@ -490,19 +500,19 @@ img { width: 100%; }
 
 #product-1 .div-description .description .dimensions ul li .dimension:hover { background: #FF7676; }
 
-#product-1 .div-description .description .dimensions ul li .more-description { visibility: hidden; display: flex; min-width: 150px; flex-direction: column; background: #ffffff; padding: 10px; position: absolute; bottom: 28px; left: -24px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); font-family: Roboto; font-size: 14px; }
+#product-1 .div-description .description .dimensions ul li .more-description { visibility: hidden; display: flex; min-width: 150px; flex-direction: column; background: #ffffff; padding: 10px; position: absolute; bottom: 28px; left: -24px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); font-family: Roboto; font-size: 1.4rem; }
 
 #product-1 .div-description .description .dimensions ul li .more-description li { display: flex; margin-bottom: 1px; margin-right: 0px; }
 
 #product-1 .div-description .description .description-product { display: flex; flex-direction: column; }
 
-#product-1 .div-description .description .description-product .description-product-h2 { font-family: 'Roboto'; font-size: 18px; font-weight: 500; color: #040505; margin-bottom: 10px; }
+#product-1 .div-description .description .description-product .description-product-h2 { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 500; color: #040505; margin-bottom: 10px; }
 
-#product-1 .div-description .description .description-product p { font-family: 'Roboto'; font-size: 16px; font-weight: 400; color: #1B1C1C; }
+#product-1 .div-description .description .description-product p { font-family: 'Roboto'; font-size: 1.6rem; font-weight: 400; color: #1B1C1C; }
 
 #product-1 .div-description #advice { margin-top: 10px; padding-top: 25px; padding-bottom: 25px; background: #FFFFFF; }
 
-#product-1 .div-description #advice .advice-title { font-family: 'Roboto'; font-weight: 600; font-size: 22px; color: #000000; margin-bottom: 35px; padding-bottom: 10px; border-bottom: 1px solid #040505; }
+#product-1 .div-description #advice .advice-title { font-family: 'Roboto'; font-weight: 600; font-size: 2.2rem; color: #000000; margin-bottom: 35px; padding-bottom: 10px; border-bottom: 1px solid #040505; }
 
 #product-1 .div-description #advice .carousel-product-right { margin-top: 10px; }
 
@@ -528,13 +538,13 @@ img { width: 100%; }
 
 #product-1 .div-description #advice .carousel-product-right .item-product .product .product-text { background: #ffffff; position: absolute; bottom: -92px; border-radius: 5px; transition: all 0.4s; }
 
-#product-1 .div-description #advice .carousel-product-right .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #040505; }
+#product-1 .div-description #advice .carousel-product-right .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #040505; }
 
-#product-1 .div-description #advice .carousel-product-right .item-product .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 14px; font-weight: 400; color: #040505; }
+#product-1 .div-description #advice .carousel-product-right .item-product .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.4rem; font-weight: 400; color: #040505; }
 
 #product-1 .div-description #advice .carousel-product-right .item-product .product .product-text .more { width: 100%; height: 25px; background: #ff7676; display: flex; color: #ffffff; font-family: 'Roboto'; }
 
-#product-1 .div-description #advice .carousel-product-right .item-product .product .product-text .more a { width: 100%; height: 100%; }
+#product-1 .div-description #advice .carousel-product-right .item-product .product .product-text .more a { font-size: 1.6rem; width: 100%; height: 100%; }
 
 #product-1 .div-description #advice .carousel-product-right .item-product .product .product-text .more:hover { background: #ee60489c; }
 
@@ -546,7 +556,7 @@ img { width: 100%; }
 
 #product-1 .div-description #similar { margin-top: 15px; padding-top: 25px; padding-bottom: 25px; background: #FFFFFF; }
 
-#product-1 .div-description #similar .advice-title { font-family: 'Roboto'; font-weight: 600; font-size: 22px; color: #000000; margin-bottom: 35px; padding-bottom: 10px; border-bottom: 1px solid #040505; }
+#product-1 .div-description #similar .advice-title { font-family: 'Roboto'; font-weight: 600; font-size: 2.2rem; color: #000000; margin-bottom: 35px; padding-bottom: 10px; border-bottom: 1px solid #040505; }
 
 #product-1 .div-description #similar .carousel-product-right { margin-top: 10px; }
 
@@ -572,13 +582,13 @@ img { width: 100%; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product .product-text { background: #ffffff; position: absolute; bottom: -92px; border-radius: 5px; transition: all 0.4s; }
 
-#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #040505; }
+#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #040505; }
 
-#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 14px; font-weight: 400; color: #040505; }
+#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.4rem; font-weight: 400; color: #040505; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product .product-text .more { width: 100%; height: 25px; background: #ff7676; display: flex; color: #ffffff; font-family: 'Roboto'; }
 
-#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text .more a { width: 100%; height: 100%; }
+#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text .more a { width: 100%; height: 100%; font-size: 16rem; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product .product-text .more:hover { background: #ee60489c; }
 
@@ -598,17 +608,17 @@ img { width: 100%; }
 
 #category-block #left-menu .left-menu { list-style: none; display: flex; }
 
-#category-block #left-menu .left-menu a { padding: 5px; width: 100%; font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #040505; }
+#category-block #left-menu .left-menu a { padding: 5px; width: 100%; font-family: 'Roboto'; font-size: 1.4rem; font-weight: 500; color: #040505; }
 
 #category-block #left-menu .left-menu a:hover { color: rgba(216, 48, 46, 0.54); }
 
-#category-block .category-name { width: 100%; font-family: 'Roboto'; font-size: 30px; font-weight: 600; color: #040505; padding: 10px; margin-bottom: 25px; }
+#category-block .category-name { width: 100%; font-family: 'Roboto'; font-size: 3.0rem; font-weight: 600; color: #040505; padding: 10px; margin-bottom: 25px; }
 
 #category-block .all_goods { display: flex; flex-wrap: wrap; padding: 0 10px 0 10px; background: #ffffff; }
 
 #category-block .all_goods .dropdown { display: flex; width: 100%; flex-wrap: wrap; background: #ffffff; padding: 15px; }
 
-#category-block .all_goods .dropdown .wow a { font-family: 'Roboto'; font-weight: 400; font-size: 14px; color: #040505; }
+#category-block .all_goods .dropdown .wow a { font-family: 'Roboto'; font-weight: 400; font-size: 1.4rem; color: #040505; }
 
 #category-block .all_goods .dropdown .wow a:hover { color: #6c757d; }
 
@@ -630,7 +640,7 @@ img { width: 100%; }
 
 #category-block .all_goods .dropdown .dropdown-menu .check-in label { display: flex; align-items: center; }
 
-#category-block .all_goods .dropdown .dropdown-menu .check-in h2 { font-weight: 400; font-family: 'Roboto'; font-size: 14px; color: #1B1C1C; }
+#category-block .all_goods .dropdown .dropdown-menu .check-in h2 { font-weight: 400; font-family: 'Roboto'; font-size: 1.4rem; color: #1B1C1C; }
 
 #category-block .all_goods .dropdown .dropdown-menu .check-in h2:hover { color: #ff7676; }
 
@@ -642,19 +652,19 @@ img { width: 100%; }
 
 #category-block .all_goods .product { position: relative; width: 100%; height: 260px; display: flex; flex-direction: column; border-radius: 5px; background: #f8f8f8; transition: all 0.4s; margin-bottom: 10px; }
 
-#category-block .all_goods .product h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #040505; }
+#category-block .all_goods .product h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #040505; }
 
 #category-block .all_goods .product .product-image { border-radius: 5px; width: 100%; height: 240px; overflow: hidden; }
 
-#category-block .all_goods .product .product-text { visibility: hidden; background: #ffffff; position: absolute; bottom: -100px; border-radius: 5px; }
+#category-block .all_goods .product .product-text { visibility: hidden; background: #ffffff; position: absolute; bottom: -100px; width: 100%; border-radius: 5px; }
 
-#category-block .all_goods .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 14px; font-weight: 400; color: #040505; }
+#category-block .all_goods .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.4rem; font-weight: 400; color: #040505; }
 
 #category-block .all_goods .product .product-text .more { width: 100%; height: 25px; background: #ff7676; display: flex; color: #ffffff; font-family: 'Roboto'; }
 
-#category-block .all_goods .product .product-text .more a { width: 100%; height: 100%; }
+#category-block .all_goods .product .product-text .more a { width: 100%; font-size: 1.6rem; height: 100%; color: #FFFfff; }
 
-#category-block .all_goods .product .product-text .more:hover { background: #ee60489c; }
+#category-block .all_goods .product .product-text .more:hover { background: #ee60489c; color: #FFFfff; }
 
 #category-block .all_goods .product:hover { border-radius: 5px 5px 0 0; background: #ffffff; transition: all 0.4s; transform: scale(1.04); z-index: 3; box-shadow: 0 14px 28px rgba(0, 0, 0, 0.8), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
@@ -662,7 +672,7 @@ img { width: 100%; }
 
 #advice { margin-top: 10px; padding-top: 25px; padding-bottom: 25px; background: #FFFFFF; }
 
-#advice .advice-title { font-family: 'Roboto'; font-weight: 600; font-size: 22px; color: #000000; margin-bottom: 35px; padding-bottom: 10px; border-bottom: 1px solid #040505; }
+#advice .advice-title { font-family: 'Roboto'; font-weight: 600; font-size: 2.2rem; color: #000000; margin-bottom: 35px; padding-bottom: 10px; border-bottom: 1px solid #040505; }
 
 #advice .carousel-product { margin-top: 10px; }
 
@@ -686,17 +696,17 @@ img { width: 100%; }
 
 #advice .carousel-product .item-product .product .product-image img { transition: all 0.6s; }
 
-#advice .carousel-product .item-product .product .product-text { background: #ffffff; position: absolute; bottom: -92px; border-radius: 5px; transition: all 0.4s; }
+#advice .carousel-product .item-product .product .product-text { background: #ffffff; position: absolute; bottom: -92px; border-radius: 5px; transition: all 0.4s; width: 100%; }
 
-#advice .carousel-product .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #040505; }
+#advice .carousel-product .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #040505; }
 
-#advice .carousel-product .item-product .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 14px; font-weight: 400; color: #040505; }
+#advice .carousel-product .item-product .product .product-text p { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.4rem; font-weight: 400; color: #040505; }
 
 #advice .carousel-product .item-product .product .product-text .more { width: 100%; height: 25px; background: #ff7676; display: flex; color: #ffffff; font-family: 'Roboto'; }
 
-#advice .carousel-product .item-product .product .product-text .more a { width: 100%; height: 100%; }
+#advice .carousel-product .item-product .product .product-text .more a { font-size: 1.6rem; width: 100%; height: 100%; color: #FFFfff; }
 
-#advice .carousel-product .item-product .product .product-text .more:hover { background: #ee60489c; }
+#advice .carousel-product .item-product .product .product-text .more:hover { color: #FFFfff; background: #ee60489c; }
 
 #advice .carousel-product .item-product .product:hover { border-radius: 5px; background: #ffffff; transition: all 0.4s; z-index: 3; }
 
@@ -706,19 +716,19 @@ img { width: 100%; }
 
 #bascet { background: #e9ecef; padding-bottom: 20px; }
 
-#bascet .bascet-name { width: 100%; font-family: Roboto; font-size: 30px; font-weight: 600; color: #040505; padding: 10px; margin-bottom: 25px; }
+#bascet .bascet-name { width: 100%; font-family: Roboto; font-size: 3.0rem; font-weight: 600; color: #040505; padding: 10px; margin-bottom: 25px; }
 
 #bascet .purchased { width: 100%; display: flex; flex-direction: column; }
 
 #bascet .purchased .all-purchased { display: flex; align-items: center; padding: 15px 15px 15px 5px; background: #ffffff; justify-content: space-between; }
 
-#bascet .purchased .all-purchased .delete { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #ff7676; }
+#bascet .purchased .all-purchased .delete { font-family: 'Roboto'; font-size: 1.6rem; font-weight: 500; color: #ff7676; }
 
 #bascet .purchased .all-purchased .delete:hover { color: #ff5749; }
 
 #bascet .purchased .all-purchased .forms { display: flex; }
 
-#bascet .purchased .all-purchased h3 { font-family: Roboto; font-size: 18px; font-weight: 500; color: #040505; }
+#bascet .purchased .all-purchased h3 { font-family: Roboto; font-size: 1.8rem; font-weight: 500; color: #040505; }
 
 #bascet .purchased .all-purchased .form-check { -webkit-appearance: checkbox; width: 18px; height: 18px; margin-right: 10px; }
 
@@ -728,7 +738,7 @@ img { width: 100%; }
 
 #bascet .purchased .instance .form-check { -webkit-appearance: checkbox; width: 18px; height: 18px; margin-right: 10px; background: #ff7676 !important; }
 
-#bascet .purchased .instance h3 { font-family: Roboto; font-size: 16px; font-weight: 500; color: #040505; margin-top: 6px; }
+#bascet .purchased .instance h3 { font-family: Roboto; font-size: 1.6rem; font-weight: 500; color: #040505; margin-top: 6px; }
 
 #bascet .purchased .instance .inst-image-block { display: flex; margin-top: 15px; }
 
@@ -740,9 +750,9 @@ img { width: 100%; }
 
 #bascet .purchased .instance .inst-ul li:not(:first-child) { margin-top: 10px; }
 
-#bascet .purchased .instance .inst-ul h2 { font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #6c757d; }
+#bascet .purchased .instance .inst-ul h2 { font-family: 'Roboto'; font-size: 1.4rem; font-weight: 500; color: #6c757d; }
 
-#bascet .purchased .instance .inst-ul span { font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #1B1C1C; }
+#bascet .purchased .instance .inst-ul span { font-family: 'Roboto'; font-size: 1.4rem; font-weight: 500; color: #1B1C1C; }
 
 #bascet .purchased .instance .inst-ul .add-button { width: 20px; height: 20px; border: 1px #6c757d; background: inherit; }
 
@@ -756,15 +766,15 @@ img { width: 100%; }
 
 #bascet .purchased .instance .inst-ul-2 li:not(:first-child) { margin-top: 10px; }
 
-#bascet .purchased .instance .inst-ul-2 h2 { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #000000; }
+#bascet .purchased .instance .inst-ul-2 h2 { font-family: 'Roboto'; font-size: 1.6rem; font-weight: 500; color: #000000; }
 
-#bascet .purchased .instance .inst-ul-2 span { font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #6c757d; }
+#bascet .purchased .instance .inst-ul-2 span { font-family: 'Roboto'; font-size: 1.4rem; font-weight: 500; color: #6c757d; }
 
 #bascet .sticky-sum { position: sticky; top: 42px; }
 
 #bascet .sum { display: flex; align-items: center; padding: 15px 15px 15px 5px; background: #ffffff; }
 
-#bascet .sum h2 { font-family: Roboto; font-size: 18px; font-weight: 500; color: #040505; }
+#bascet .sum h2 { font-family: Roboto; font-size: 1.8rem; font-weight: 500; color: #040505; }
 
 #bascet .all-sum { margin-top: 1px; background: #ffffff; display: flex; padding: 10px 10px 5px 10px; flex-direction: column; align-items: center; }
 
@@ -774,11 +784,11 @@ img { width: 100%; }
 
 #bascet .all-sum .sum-ul li:not(:first-child) { margin-top: 10px; }
 
-#bascet .all-sum .sum-ul h2 { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #000000; }
+#bascet .all-sum .sum-ul h2 { font-family: 'Roboto'; font-size: 1.6rem; font-weight: 500; color: #000000; }
 
-#bascet .all-sum .sum-ul span { font-family: 'Roboto'; font-size: 14px; font-weight: 500; color: #6c757d; }
+#bascet .all-sum .sum-ul span { font-family: 'Roboto'; font-size: 1.4rem; font-weight: 500; color: #6c757d; }
 
-#bascet .all-sum .push-item { margin-top: 15px; width: 80%; height: 30px; font-family: Roboto; font-size: 18px; font-weight: 500; color: #ffffff; background: #ff7676; border-radius: 5px; display: flex; justify-content: center; align-items: center; }
+#bascet .all-sum .push-item { margin-top: 15px; width: 80%; height: 30px; font-family: Roboto; font-size: 1.8rem; font-weight: 500; color: #ffffff; background: #ff7676; border-radius: 5px; display: flex; justify-content: center; align-items: center; }
 
 #agreement { background: #e9ecef; padding: 20px 5% 40px 5%; }
 
@@ -788,15 +798,15 @@ img { width: 100%; }
 
 #agreement .ul-agreement .li-agreement { list-style: disc; }
 
-#agreement h2 { font-family: 'Roboto'; font-size: 28px; font-weight: 600; color: #2d2f43; }
+#agreement h2 { font-family: 'Roboto'; font-size: 2.8rem; font-weight: 600; color: #2d2f43; }
 
-#agreement h3 { font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
+#agreement h3 { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
 
-#agreement h4 { font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
+#agreement h4 { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
 
-#agreement p { font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
+#agreement p { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
 
-#agreement a { font-family: 'Roboto'; font-size: 18px; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
+#agreement a { font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #2d2f43; line-height: 24px; margin-top: 15px; }
 
 #agreement a:hover { color: #ff7676; }
 
@@ -810,11 +820,11 @@ img { width: 100%; }
 
 #questions ul.tabs { padding: 0; }
 
-#questions #tab1, #questions #tab2, #questions #tab3, #questions #tab4, #questions #tab5, #questions #tab6, #questions #tab7, #questions #tab8, #questions #tab9, #questions #tab10, #questions #tab11, #questions #tab12 { display: flex; padding: 7px; width: 100%; font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #3a3a3ade; }
+#questions #tab1, #questions #tab2, #questions #tab3, #questions #tab4, #questions #tab5, #questions #tab6, #questions #tab7, #questions #tab8, #questions #tab9, #questions #tab10, #questions #tab11, #questions #tab12 { display: flex; padding: 7px; width: 100%; font-family: 'Roboto'; font-size: 1.6rem; font-weight: 500; color: #3a3a3ade; }
 
-#questions #tabsName, #questions #tabsName1, #questions #tabsName2 { font-family: 'Roboto'; font-size: 16px; font-weight: 500; display: flex; padding: 7px; width: 100%; background: #ff7676; cursor: inherit; color: #FFFfff; }
+#questions #tabsName, #questions #tabsName1, #questions #tabsName2 { font-family: 'Roboto'; font-size: 1.6rem; font-weight: 500; display: flex; padding: 7px; width: 100%; background: #ff7676; cursor: inherit; color: #FFFfff; }
 
-#questions ul.tabs li { list-style-type: none; font-size: 18px; }
+#questions ul.tabs li { list-style-type: none; font-size: 1.8rem; }
 
 #questions #tab1_content, #questions #tab2_content, #questions #tab3_content, #questions #tab4_content, #questions #tab5_content, #questions #tab6_content, #questions #tab7_content, #questions #tab8_content, #questions #tab9_content, #questions #tab10_content, #questions #tab11_content, #questions #tab12_content { background: #ffffff; height: auto; display: flex; color: #2d2d2d; flex-direction: column; padding-left: 15px; padding-top: 15px; }
 
@@ -826,9 +836,9 @@ img { width: 100%; }
 
 #questions #tab1_content .wrap .searchTerm:focus, #questions #tab2_content .wrap .searchTerm:focus, #questions #tab3_content .wrap .searchTerm:focus, #questions #tab4_content .wrap .searchTerm:focus, #questions #tab5_content .wrap .searchTerm:focus, #questions #tab6_content .wrap .searchTerm:focus, #questions #tab7_content .wrap .searchTerm:focus, #questions #tab8_content .wrap .searchTerm:focus, #questions #tab9_content .wrap .searchTerm:focus, #questions #tab10_content .wrap .searchTerm:focus, #questions #tab11_content .wrap .searchTerm:focus, #questions #tab12_content .wrap .searchTerm:focus { color: #3a3a3ade; }
 
-#questions #tab1_content .wrap .searchButton, #questions #tab2_content .wrap .searchButton, #questions #tab3_content .wrap .searchButton, #questions #tab4_content .wrap .searchButton, #questions #tab5_content .wrap .searchButton, #questions #tab6_content .wrap .searchButton, #questions #tab7_content .wrap .searchButton, #questions #tab8_content .wrap .searchButton, #questions #tab9_content .wrap .searchButton, #questions #tab10_content .wrap .searchButton, #questions #tab11_content .wrap .searchButton, #questions #tab12_content .wrap .searchButton { position: absolute; right: -50px; width: 40px; height: 36px; border: 1px solid #ff7676; background: #ff7676; text-align: center; color: #fff; border-radius: 5px; cursor: pointer; font-size: 20px; }
+#questions #tab1_content .wrap .searchButton, #questions #tab2_content .wrap .searchButton, #questions #tab3_content .wrap .searchButton, #questions #tab4_content .wrap .searchButton, #questions #tab5_content .wrap .searchButton, #questions #tab6_content .wrap .searchButton, #questions #tab7_content .wrap .searchButton, #questions #tab8_content .wrap .searchButton, #questions #tab9_content .wrap .searchButton, #questions #tab10_content .wrap .searchButton, #questions #tab11_content .wrap .searchButton, #questions #tab12_content .wrap .searchButton { position: absolute; right: -50px; width: 40px; height: 36px; border: 1px solid #ff7676; background: #ff7676; text-align: center; color: #fff; border-radius: 5px; cursor: pointer; font-size: 2.0rem; }
 
-#questions #tab1_content .title-tab, #questions #tab2_content .title-tab, #questions #tab3_content .title-tab, #questions #tab4_content .title-tab, #questions #tab5_content .title-tab, #questions #tab6_content .title-tab, #questions #tab7_content .title-tab, #questions #tab8_content .title-tab, #questions #tab9_content .title-tab, #questions #tab10_content .title-tab, #questions #tab11_content .title-tab, #questions #tab12_content .title-tab { font-family: 'Roboto'; font-size: 20px; font-weight: 500; color: #3a3a3ade; padding: 5px; }
+#questions #tab1_content .title-tab, #questions #tab2_content .title-tab, #questions #tab3_content .title-tab, #questions #tab4_content .title-tab, #questions #tab5_content .title-tab, #questions #tab6_content .title-tab, #questions #tab7_content .title-tab, #questions #tab8_content .title-tab, #questions #tab9_content .title-tab, #questions #tab10_content .title-tab, #questions #tab11_content .title-tab, #questions #tab12_content .title-tab { font-family: 'Roboto'; font-size: 2.0rem; font-weight: 500; color: #3a3a3ade; padding: 5px; }
 
 #questions #tab1_content .content-wrap, #questions #tab2_content .content-wrap, #questions #tab3_content .content-wrap, #questions #tab4_content .content-wrap, #questions #tab5_content .content-wrap, #questions #tab6_content .content-wrap, #questions #tab7_content .content-wrap, #questions #tab8_content .content-wrap, #questions #tab9_content .content-wrap, #questions #tab10_content .content-wrap, #questions #tab11_content .content-wrap, #questions #tab12_content .content-wrap { padding: 23px 15px; width: 100%; }
 
@@ -838,17 +848,17 @@ img { width: 100%; }
 
 #questions #tab1_content .content-wrap .ac-title, #questions #tab2_content .content-wrap .ac-title, #questions #tab3_content .content-wrap .ac-title, #questions #tab4_content .content-wrap .ac-title, #questions #tab5_content .content-wrap .ac-title, #questions #tab6_content .content-wrap .ac-title, #questions #tab7_content .content-wrap .ac-title, #questions #tab8_content .content-wrap .ac-title, #questions #tab9_content .content-wrap .ac-title, #questions #tab10_content .content-wrap .ac-title, #questions #tab11_content .content-wrap .ac-title, #questions #tab12_content .content-wrap .ac-title { position: relative; cursor: pointer; background: #eaeaea; }
 
-#questions #tab1_content .content-wrap .ac-title p, #questions #tab2_content .content-wrap .ac-title p, #questions #tab3_content .content-wrap .ac-title p, #questions #tab4_content .content-wrap .ac-title p, #questions #tab5_content .content-wrap .ac-title p, #questions #tab6_content .content-wrap .ac-title p, #questions #tab7_content .content-wrap .ac-title p, #questions #tab8_content .content-wrap .ac-title p, #questions #tab9_content .content-wrap .ac-title p, #questions #tab10_content .content-wrap .ac-title p, #questions #tab11_content .content-wrap .ac-title p, #questions #tab12_content .content-wrap .ac-title p { font-family: 'Roboto'; font-size: 16px; font-weight: 500; color: #3a3a3ade; word-wrap: break-word; margin: 0; padding: 10px 32px 10px 51px; border-radius: 0; }
+#questions #tab1_content .content-wrap .ac-title p, #questions #tab2_content .content-wrap .ac-title p, #questions #tab3_content .content-wrap .ac-title p, #questions #tab4_content .content-wrap .ac-title p, #questions #tab5_content .content-wrap .ac-title p, #questions #tab6_content .content-wrap .ac-title p, #questions #tab7_content .content-wrap .ac-title p, #questions #tab8_content .content-wrap .ac-title p, #questions #tab9_content .content-wrap .ac-title p, #questions #tab10_content .content-wrap .ac-title p, #questions #tab11_content .content-wrap .ac-title p, #questions #tab12_content .content-wrap .ac-title p { font-family: 'Roboto'; font-size: 1.6rem; font-weight: 500; color: #3a3a3ade; word-wrap: break-word; margin: 0; padding: 10px 32px 10px 51px; border-radius: 0; }
 
 #questions #tab1_content .content-wrap .accordian-para, #questions #tab2_content .content-wrap .accordian-para, #questions #tab3_content .content-wrap .accordian-para, #questions #tab4_content .content-wrap .accordian-para, #questions #tab5_content .content-wrap .accordian-para, #questions #tab6_content .content-wrap .accordian-para, #questions #tab7_content .content-wrap .accordian-para, #questions #tab8_content .content-wrap .accordian-para, #questions #tab9_content .content-wrap .accordian-para, #questions #tab10_content .content-wrap .accordian-para, #questions #tab11_content .content-wrap .accordian-para, #questions #tab12_content .content-wrap .accordian-para { display: none; border-top: none; margin: 0px 0 0 0; }
 
-#questions #tab1_content .content-wrap .commn-para-sm, #questions #tab2_content .content-wrap .commn-para-sm, #questions #tab3_content .content-wrap .commn-para-sm, #questions #tab4_content .content-wrap .commn-para-sm, #questions #tab5_content .content-wrap .commn-para-sm, #questions #tab6_content .content-wrap .commn-para-sm, #questions #tab7_content .content-wrap .commn-para-sm, #questions #tab8_content .content-wrap .commn-para-sm, #questions #tab9_content .content-wrap .commn-para-sm, #questions #tab10_content .content-wrap .commn-para-sm, #questions #tab11_content .content-wrap .commn-para-sm, #questions #tab12_content .content-wrap .commn-para-sm { font-family: 'Roboto'; font-size: 14px; font-weight: 400; color: #3a3a3ade; padding: 10px 20px 10px 50px; margin: 0 0 15px; }
+#questions #tab1_content .content-wrap .commn-para-sm, #questions #tab2_content .content-wrap .commn-para-sm, #questions #tab3_content .content-wrap .commn-para-sm, #questions #tab4_content .content-wrap .commn-para-sm, #questions #tab5_content .content-wrap .commn-para-sm, #questions #tab6_content .content-wrap .commn-para-sm, #questions #tab7_content .content-wrap .commn-para-sm, #questions #tab8_content .content-wrap .commn-para-sm, #questions #tab9_content .content-wrap .commn-para-sm, #questions #tab10_content .content-wrap .commn-para-sm, #questions #tab11_content .content-wrap .commn-para-sm, #questions #tab12_content .content-wrap .commn-para-sm { font-family: 'Roboto'; font-size: 1.4rem; font-weight: 400; color: #3a3a3ade; padding: 10px 20px 10px 50px; margin: 0 0 15px; }
 
 #questions #tab1_content .content-wrap .ac-title.acc-active p, #questions #tab2_content .content-wrap .ac-title.acc-active p, #questions #tab3_content .content-wrap .ac-title.acc-active p, #questions #tab4_content .content-wrap .ac-title.acc-active p, #questions #tab5_content .content-wrap .ac-title.acc-active p, #questions #tab6_content .content-wrap .ac-title.acc-active p, #questions #tab7_content .content-wrap .ac-title.acc-active p, #questions #tab8_content .content-wrap .ac-title.acc-active p, #questions #tab9_content .content-wrap .ac-title.acc-active p, #questions #tab10_content .content-wrap .ac-title.acc-active p, #questions #tab11_content .content-wrap .ac-title.acc-active p, #questions #tab12_content .content-wrap .ac-title.acc-active p { color: #ee60489c !important; }
 
 #questions #tab1_content .content-wrap .plus-icon, #questions #tab2_content .content-wrap .plus-icon, #questions #tab3_content .content-wrap .plus-icon, #questions #tab4_content .content-wrap .plus-icon, #questions #tab5_content .content-wrap .plus-icon, #questions #tab6_content .content-wrap .plus-icon, #questions #tab7_content .content-wrap .plus-icon, #questions #tab8_content .content-wrap .plus-icon, #questions #tab9_content .content-wrap .plus-icon, #questions #tab10_content .content-wrap .plus-icon, #questions #tab11_content .content-wrap .plus-icon, #questions #tab12_content .content-wrap .plus-icon { width: 20px; height: 20px; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background-size: contain; z-index: 99; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; background-repeat: no-repeat; }
 
-#questions p { font-size: 16px; color: #1B1C1C; }
+#questions p { font-size: 1.6rem; color: #1B1C1C; }
 
 #questions ul.tabs li { display: inline-block; cursor: pointer; background: #ffffff; color: #1B1C1C; z-index: 0; }
 
@@ -862,17 +872,17 @@ footer .footer .footer-box { display: flex; justify-content: left; flex-directio
 
 footer .footer .footer-box .icon-link { width: 50%; }
 
-footer .footer .footer-box .footer-icon { display: inline-block; font-size: 20px; margin-top: 0px; }
+footer .footer .footer-box .footer-icon { display: inline-block; font-size: 2.0rem; margin-top: 0px; }
 
-footer .footer .footer-box p { font-family: 'Roboto'; font-weight: 400; font-size: 14px; color: #696969; line-height: 16px; margin-bottom: 10px; margin-top: 10px; }
+footer .footer .footer-box p { font-family: 'Roboto'; font-weight: 400; font-size: 1.4rem; color: #696969; line-height: 16px; margin-bottom: 10px; margin-top: 10px; }
 
-footer .footer .footer-box h2 { font-family: 'Roboto'; font-weight: 500; font-size: 16px; color: #000000; margin-top: 5px; }
+footer .footer .footer-box h2 { font-family: 'Roboto'; font-weight: 500; font-size: 1.6rem; color: #000000; margin-top: 5px; }
 
 footer .footer .footer-box h2:hover { color: #ff7676; }
 
-footer .footer .footer-box h3 { font-family: 'Roboto'; font-weight: 600; font-size: 16px; color: #000000; margin-bottom: 15px; margin-top: 9px; }
+footer .footer .footer-box h3 { font-family: 'Roboto'; font-weight: 600; font-size: 1.6rem; color: #000000; margin-bottom: 15px; margin-top: 9px; }
 
-footer .footer .footer-box li { font-family: 'Roboto'; font-weight: 500; font-size: 15px; color: #000000; margin-top: 10px; margin-bottom: 10px; }
+footer .footer .footer-box li { font-family: 'Roboto'; font-weight: 500; font-size: 1.5rem; color: #000000; margin-top: 10px; margin-bottom: 10px; }
 
 footer .footer .footer-box li:hover { color: #ff7676; }
 
