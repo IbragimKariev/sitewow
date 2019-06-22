@@ -172,6 +172,8 @@ img { width: 100%; }
 
 .loc-push .drop .valute { font-size: 1.6rem; }
 
+.loc-push .drop .dropdown-item h2 { font-family: 'Roboto'; font-size: 1.4rem; }
+
 .adress { display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; }
 
 .adress a { font-family: 'Roboto'; color: #040505; font-size: 1.5rem; font-weight: 700; }
@@ -446,7 +448,7 @@ img { width: 100%; }
 
 #product-1 .reviews .review-sort li:not(:last-child) { margin-right: 10px; }
 
-#product-1 .reviews .review-sort .review-sorts { height: 25px; background: #eee; border-radius: 11px; padding: 4px; }
+#product-1 .reviews .review-sort .review-sorts { height: 25px; background: #eee; border-radius: 11px; padding: 5px; font-family: 'Roboto'; font-weight: 400; font-size: 1.4rem; }
 
 #product-1 .reviews .review-sort .reviews_active { background: #ff7676; color: #ffffff; }
 
@@ -580,7 +582,7 @@ img { width: 100%; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product .product-image img { transition: all 0.6s; }
 
-#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text { background: #ffffff; position: absolute; bottom: -92px; border-radius: 5px; transition: all 0.4s; }
+#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text { background: #ffffff; position: absolute; bottom: -92px; border-radius: 5px; transition: all 0.4s; width: 100%; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product .product-text h2 { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; font-family: 'Roboto'; font-size: 1.8rem; font-weight: 400; color: #040505; }
 
@@ -588,13 +590,15 @@ img { width: 100%; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product .product-text .more { width: 100%; height: 25px; background: #ff7676; display: flex; color: #ffffff; font-family: 'Roboto'; }
 
-#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text .more a { width: 100%; height: 100%; font-size: 16rem; }
+#product-1 .div-description #similar .carousel-product-right .item-product .product .product-text .more a { width: 100%; height: 100%; font-size: 1.6rem; color: #FFFfff; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product .product-text .more:hover { background: #ee60489c; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product:hover { border-radius: 5px; background: #ffffff; transition: all 0.4s; z-index: 3; }
 
-#product-1 .div-description #similar .carousel-product-right .item-product .product:hover .product-text { bottom: 0; z-index: 1; border-radius: 5px; transition: all 0.6s; overflow: hidden; }
+#product-1 .div-description #similar .carousel-product-right .item-product .product:hover .product-text { bottom: 0; z-index: 1; border-radius: 5px; transition: all 0.6s; overflow: hidden; color: #FFFfff; }
+
+#product-1 .div-description #similar .carousel-product-right .item-product .product:hover .product-text .more a { color: #FFFfff; }
 
 #product-1 .div-description #similar .carousel-product-right .item-product .product:hover .product-image img { transition: all 0.6s; transform: scale(1.04); }
 

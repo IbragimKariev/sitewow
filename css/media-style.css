@@ -101,7 +101,7 @@ html{
     }
     #category-block .all_goods .product{
         width: 180px;
-        height: 240px;
+        height: 220px;
     }
     #category-block .all_goods .product .product-image{
         height: 180px;
@@ -199,6 +199,9 @@ html{
 @media  (max-width: 992px){
     html{
         font-size: 8px;
+    }
+    footer .footer .no-pad{
+        padding-left: 14px;
     }
     #advice .carousel-product .item-product {
         width: 166px}
