@@ -16,7 +16,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "gulp-clean-css": "^4.2.0"
